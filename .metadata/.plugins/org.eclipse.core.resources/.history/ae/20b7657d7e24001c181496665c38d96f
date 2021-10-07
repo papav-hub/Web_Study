@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	.box 
+	{
+    width: 200px;
+    height: 200px; 
+    border-radius: 70%;
+    overflow: hidden;
+	}
+	
+	.profile 
+	{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	}
+</style>
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Web Service ProgrammingHomework</title>
+	<link rel="stylesheet" href="resources/register.css" type="text/css"></link>
+</head>
+
+<body>
+	<header> INTRODUCE </header>
+	
+	<div class="box">
+    	<img class="profile" src="resources/ChoiHyeMin01.jpg">
+	</div>
+	<h1 style="text-align:center;"> Choi Hye Min </h1>
+	<br>
+	<hr>
+	<br>
+	
+	<table>
+		<tr>
+			<th>기초 교과</th>
+			<td>글쓰기, 영어1, 영어2, 글로벌잉글리쉬, 가치와비전, 창의와 실천</td>
+		</tr>
+		<tr>
+			<th>커리어 교과</th>
+			<td>진로와 미래</td>
+		</tr>
+		<tr>
+			<th>핵심 교양</th>
+			<td>과학기술과 대중문화, 문화유산과 역사, 소비자와 마케팅, 현대사회와 법</td>
+		</tr>
+		<tr>
+			<th>학번</th>
+			<td><%=studentVO.getSnum() %></td>
+		</tr>
+		<tr>
+			<th>학과</th>
+			<td><%=studentVO.getDepart() %></td>
+		</tr>
+		<tr>
+			<th>핸드폰</th>
+			<td><%=studentVO.getMobile() %></td>
+		</tr>
+		<tr>
+			<th>이메일</th>
+			<td><%=studentVO.getEmail() %></td>
+		</tr>
+	</table>
+	
+	
+</body>
+</html>

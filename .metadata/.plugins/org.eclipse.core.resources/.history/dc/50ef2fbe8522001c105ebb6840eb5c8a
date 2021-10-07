@@ -1,0 +1,10 @@
+package kpu.web.club.persistence;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import kpu.club.domain.StudentVO;
+
+public class StudentDAO {
+
+}

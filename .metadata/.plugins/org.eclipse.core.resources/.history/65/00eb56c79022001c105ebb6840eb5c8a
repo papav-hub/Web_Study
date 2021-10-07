@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="kpu.web.club.domain.StudentVO"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Web Service ProgrammingHomework</title>
+	<link rel="stylesheet" href="resources/register.css" type="text/css"></link>
+</head>
+
+<body>
+	<header> 2021 KPU Web Service Programming Community </header>
+	
+	<audio src="resources/Supreme.mp3" autoplay></audio>
+	
+	<p id=sect>
+		커뮤니티 가입을 축하합니다.<br>
+	</p>
+	
+	<% 
+		StudentVO studentVO = (StudentVO)request.getAttribute("output");
+	%>
+	
+	
+	계정 : <%=studentVO.getId() %>
+	비밀번호 : <%=studentVO.getPasswd() %>
+	이름 : <%=studentVO.getUsername() %>
+	학번 : <%=studentVO.getSnum() %>
+	학과 : <%=studentVO.getDepart() %>
+	핸드폰 : <%=studentVO.getMobile() %>
+	이메일 : <%=studentVO.getEmail() %>
+	
+	
+	<a href="http://localhost:8080/ChoiHyeMin_reg/welcome.html" target="_self">
+	메인 페이지 이동
+	</a>
+</body>
+</html>

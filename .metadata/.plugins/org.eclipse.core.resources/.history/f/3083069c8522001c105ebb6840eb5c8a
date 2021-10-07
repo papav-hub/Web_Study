@@ -1,0 +1,5 @@
+package kpu.web.club.persistence;
+
+public class StudentDAO {
+
+}

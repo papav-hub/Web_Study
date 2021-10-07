@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+	@font-face {
+	    font-family: 'SDSamliphopangche_Outline';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	*
+	{
+		font-family: 'SDSamliphopangche_Outline';
+	}
+
+	
+	header 
+	{
+		font-family: 'SDSamliphopangche_Outline';
+	    font-size: 100px;
+	    text-align:center;
+	}
+	
+	
+	body
+	{
+		color:black;
+		font-family:'맑은 고딕', '돋움', '고딕';
+	}
+	
+	
+	div
+	{
+		margin-left:auto;
+		margin-right:auto;
+		width:70%;
+		text-align:center;
+	}
+	
+	
+	ul
+	{
+		list-style:none;
+		text-align:left;
+		background-color:#FDF2EE;
+		margin-left:20px;
+		margin-right:20px;
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	
+	
+	#sect
+	{
+		background-color:rgb(128, 255, 128);
+		text-align:center;
+		margin:20px;
+		padding:20px;
+	}
+	
+	
+	a
+	{
+		text-decoration:underline;
+		color:#0000a0;
+	}
+	
+	
+	table
+	{
+		border-collapse:collapse;
+		width:100%
+	}
+	
+	
+	th
+	{
+		border:1px solid lightgray;
+		padding:5px;
+		width:30%
+	}
+	
+	
+	td
+	{
+		border:1px solid lightgray;
+		padding:5px;
+		width:70%;
+	}
+	
+	
+	

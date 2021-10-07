@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Web Service ProgrammingHomework</title>
+	<link rel="stylesheet" href="resources/register.css" type="text/css"></link>
+</head>
+
+<body>
+	<header> 2021 KPU Web Service Programming Community </header>
+	
+	<audio src="resources/Supreme.mp3" autoplay></audio>
+	
+	<p id=sect>
+		커뮤니티 가입을 축하합니다.<br>
+	</p>
+	
+	<a href="http://localhost:8080/ChoiHyeMin_reg/welcome.html" target="_self">
+	메인 페이지 이동
+	</a>
+</body>
+</html>
