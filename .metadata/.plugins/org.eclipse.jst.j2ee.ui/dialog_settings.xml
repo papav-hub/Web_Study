@@ -6,6 +6,8 @@
 		<item value="Apache Tomcat v9.0"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Program Files\Apache Software Foundation\Tomcat 9.0\hyemin_mvcdb.war"/>
+		<item value="C:\Program Files\Apache Software Foundation\Tomcat 9.0\hyemin_mvxdb.war"/>
 		<item value="C:\Program Files\Apache Software Foundation\Tomcat 9.0\ChoiHyeMin_reg.war"/>
 		<item value="C:\Program Files\Apache Software Foundation\Tomcat 9.0\ChoiHyeMin.war"/>
 		<item value="C:\Program Files\Apache Software Foundation\Tomcat 9.0\jspbook.war"/>

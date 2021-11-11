@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jspbook" path="/jspbook" reloadable="true" source="org.eclipse.jst.jee.server:jspbook"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ChoiHyeMin_reg" path="/ChoiHyeMin_reg" reloadable="true" source="org.eclipse.jst.jee.server:ChoiHyeMin_reg"/></Host>
+      <Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jspbook" path="/jspbook" reloadable="true" source="org.eclipse.jst.jee.server:jspbook"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ChoiHyeMin_reg" path="/ChoiHyeMin_reg" reloadable="true" source="org.eclipse.jst.jee.server:ChoiHyeMin_reg"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hyemin_mvcdb" path="/hyemin_mvcdb" reloadable="true" source="org.eclipse.jst.jee.server:hyemin_mvcdb"/></Host>
     </Engine>
   </Service>
 </Server>

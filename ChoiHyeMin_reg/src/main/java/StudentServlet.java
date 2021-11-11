@@ -62,6 +62,8 @@ public class StudentServlet extends HttpServlet {
 			RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 			view.forward(request, response);
 			
+		}else {
+			
 		}
 	}
 
