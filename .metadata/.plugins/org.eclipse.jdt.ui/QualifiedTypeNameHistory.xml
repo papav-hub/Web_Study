@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="kpu.web.club.persistence.StudentDAO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -20,4 +19,6 @@
     <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.JspException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
