@@ -1,0 +1,590 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+}
+.cuerpo{
+    background-color: rgb(31, 27, 27);
+}
+
+.iconos{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 15px;
+    background-color: black;
+    text-decoration: none;
+}
+
+.imagen-iconos #imagen{
+    width: 125px;
+    height: 70px;
+}
+
+.panel-inicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 230px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.panel-inicio #title1{
+    width: 250px;
+    height: 30px;
+    font-size: small;
+    margin-left: 10px;
+    color: white;
+    text-align: right;
+    margin-top: 20px;
+    
+}
+
+.panel-inicio #title2{
+    margin-top: 15px;
+    width: 150px;
+    height: 30px;
+    font-size: small;
+    background-color: rgb(253, 27, 27);
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 15px;
+    
+}
+
+.panel-inicio #title3{
+    margin-top: 15px;
+    width: 150px;
+    height: 30px;
+    font-size: small;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-left: 0;
+   
+}
+
+.iconos > div > img{
+    width: 10%;
+    height: auto;
+    margin-left: 10px;
+}
+
+/*Imagen y descripciones1*/
+
+.pelis-comentarios{
+    background-color: rgb(31, 27, 27);
+    margin-top: 0px;
+    height: 400px;
+}
+
+.imagen-descripcion1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.titulo1{
+    margin-top: 50px;
+    text-align: left;
+    font-size: large;
+    padding: 1em;
+    color: white;
+}
+
+.imagen-descripcion1 > div > a > img{
+    width: 400px;
+    height: auto;
+    padding: 7px;
+}
+
+.descripcion1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion1 #nombre1{
+    margin-left: 120px;
+}
+
+.descripcion1 #nombre2{
+    margin-left: 140px;
+}
+
+.descripcion1 #nombre3{
+    margin-left: 135px;
+}
+
+/*Imagen y descripciones2*/
+
+.pelis-comentarios2{
+    background-color: rgb(31, 27, 27);
+    margin-top: 0px;
+    height: 400px;
+}
+
+.imagen-descripcion2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.titulo2{
+    margin-top: 50px;
+    text-align: left;
+    font-size: large;
+    padding: 1em;
+    color: white;
+}
+
+.imagen-descripcion2 > div > a > img{
+    width: 400px;
+    height: auto;
+    padding: 7px;
+}
+
+.descripcion2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion2 #nombre4{
+    margin-left: 170px;
+}
+
+.descripcion2 #nombre5{
+    margin-left: 120px;
+}
+
+.descripcion2 #nombre6{
+    margin-left: 110px;
+}
+
+/*Imagen y descripciones3*/
+
+.pelis-comentarios3{
+    background-color: rgb(31, 27, 27);
+    margin-top: 0px;
+    height: 400px;
+}
+
+.imagen-descripcion3{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.titulo3{
+    margin-top: 50px;
+    text-align: left;
+    font-size: large;
+    padding: 1em;
+    color: white;
+}
+
+.imagen-descripcion3 > div > a > img{
+    width: 400px;
+    height: auto;
+    padding: 7px;
+}
+
+.descripcion3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion3 #nombre7{
+    margin-left: 150px;
+}
+
+.descripcion3 #nombre8{
+    margin-left: 150px;
+}
+
+.descripcion3 #nombre9{
+    margin-left: 130px;
+}
+
+/*Imagen y descripciones4*/
+
+.pelis-comentarios4{
+    background-color: rgb(31, 27, 27);
+    margin-top: 0px;
+    height: 400px;
+}
+
+.imagen-descripcion4{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.titulo4{
+    margin-top: 50px;
+    text-align: left;
+    font-size: large;
+    padding: 1em;
+    color: white;
+}
+
+.imagen-descripcion4 > div > a > img{
+    width: 400px;
+    height: auto;
+    padding: 7px;
+}
+
+.descripcion4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion4 #nombre10{
+    margin-left: 145px;
+}
+
+.descripcion4 #nombre11{
+    margin-left: 140px;
+}
+
+.descripcion4 #nombre12{
+    margin-left: 120px;
+}
+
+/*Imagen y descripciones5*/
+
+.pelis-comentarios5{
+    background-color: rgb(31, 27, 27);
+    margin-top: 0px;
+    height: 400px;
+}
+
+.imagen-descripcion5{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.titulo5{
+    margin-top: 50px;
+    text-align: left;
+    font-size: large;
+    padding: 1em;
+    color: white;
+}
+
+.imagen-descripcion5 > div > a > img{
+    width: 400px;
+    height: auto;
+    padding: 7px;
+}
+
+.descripcion5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion5 #nombre13{
+    margin-left: 150px;
+}
+
+.descripcion5 #nombre14{
+    margin-left: 150px;
+}
+
+.descripcion5 #nombre15{
+    margin-left: 150px;
+}
+
+/*Descripcion del final y UNETE*/
+
+.descripcion-del-final{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-descripcion{
+    font-size: xx-large;
+    color: white;
+    padding: 1em;
+    height: 50px;
+}
+
+.parrafo-descripcion{
+    color: white;
+    width: 1350px;
+    height: auto;
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.boton{
+    padding: 1em;
+    margin-top: 60px;
+    background-color: rgb(253, 27, 27);
+    border-radius: 2px;
+    color: white;
+}
+
+/*pie de pagina*/
+
+.pie{
+    padding: 2em;
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+}
+
+/*   COMIENZA LA SEGUNDA PAGINA     */
+
+.wonder{
+    background-image: url("media/wonder.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 650px;
+    width: auto;
+}
+
+.wonder > div > img{
+    width: 500px;
+    height: auto;
+    margin-left: 60px;
+}
+
+.sector-detalle{
+    color: white;
+    padding: 5px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.protagonista-nombre{
+    display: grid;
+    grid-template-columns: 30px 500px;
+}
+.protagonista-nombre #nombres{
+    margin-left: 90px;
+}
+.titulo-peli{
+    height: 10px;
+}
+
+.sector-detalle-peli{
+    display: grid;
+    grid-template-columns: 50px 50px 100px 250px;
+    color: rgba(255, 255, 255, 0.699);
+    font-size: small;
+}
+
+.sector-detalle-peli #h1{
+    border-right: 1px solid rgba(255, 255, 255, 0.699);
+    text-align: center;
+}
+
+.sector-detalle-peli #h2{
+    border: 1px solid rgba(255, 255, 255, 0.699);
+    margin-left: 5px;
+    text-align: center;
+}
+
+.sector-detalle-peli #h3{
+    border-left: 1px solid rgba(255, 255, 255, 0.699);
+    margin-left: 5px;
+    text-align: center;
+}
+
+.sector-detalle-peli #h4{
+    border-left: 1px solid rgba(255, 255, 255, 0.699);
+    margin-left: 2px;
+    text-align: center;
+
+}
+
+.parrafoPeli{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sector-detalle > div > #prota{
+    color: rgba(255, 255, 255, 0.699);
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sector-detalle > div > #nombres{
+    color: white;
+    width: 600px;
+    margin-top: 0px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Mas detalles de la pelicula SECTION*/
+
+.mas-detalles{
+    box-shadow: 6px 20px 10px black;
+    padding: 1em;
+    color: white;
+    height: 70px;
+}
+
+.mas-detalles > h1{
+    margin-top: 50px;
+    margin-left: 43px;
+}
+
+/*Parte de genero de peli y detalles*/
+
+.contenedor-genero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    
+}
+
+.contenedor-genero > div{
+    margin-left: 41px;
+}
+
+.clase1{
+    color: rgba(255, 255, 255, 0.699);
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.contenedor-genero2{
+    color: white;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-size: medium;
+    height: 100px;
+}
+
+.contenedor-genero2 > h4{
+    margin-left: 55px;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.contenedor-genero2 > p{
+    margin-left: 55px;
+}
+
+/*Section de cuadriculas imagenes*/
+
+.contenedor-de-grillas{
+    background-color: black;
+}
+
+.contenedor-de-grillas > h1{
+    color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.grilla{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    height: auto;
+    width: auto;
+}
+
+.columnas-imagenes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: auto;
+    width: 1200px;
+}
+
+.imagen-todas{
+    margin-left: 50px;
+    width: 350px;
+    height: auto;
+}
+
+/* Contenido antes del PIE*/
+
+.section-contenedor-antes-pie{
+    background-color: black;
+    color: white;
+}
+
+.titulo-antes-pie{
+    padding: 1em;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 19px;
+}
+
+.contenedor-antes-pie{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.antes-pie1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.antes-pie2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.antes-pie3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.antes-pie-parrafo{
+    width: 350px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.699);
+    margin-left: 50px;
+}
+
+.antes-pie-peli1{
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+/*Pie de PAGINA2*/
+.fondo-cuerpo{
+    background-color: black;
+}
+
+.pie2{
+    background-color: black;
+    padding: 2em;
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+}
