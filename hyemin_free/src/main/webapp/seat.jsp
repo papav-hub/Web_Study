@@ -6,7 +6,16 @@
 		<meta charset="UTF-8">
 		<title>seat</title>
 		<link rel="stylesheet" href="css/seat.css">
+		<link rel="stylesheet" href="css/netflix.css">
 	</head>
+	
+	
+	<header class="iconos">
+        <div class="imagen-iconos">
+            <img id="imagen" src="media/logo-netflix.png" alt="">
+        </div>
+    </header>
+    
 	
 	
 	
@@ -42,7 +51,7 @@
 	            
 	            
 	            
-	            // DB에 있는 경우 미리 빨간색으로 하기
+	            // DB에 있는 경우 미리 빨간색으로 하기////////////////////////////////////////////////////////////////////////////////////////////
 	            if(input.value == 3 + "" + 5){
 	            	input.classList.add("booked"); // 이미 예약된 것은 검정색 처리
                     clicked = document.querySelectorAll(".clicked");

@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 		.cuerpo{
-    		background-color: rgb(31, 27, 27);
+    		background-color: black;
 		}
 
         .seat {
-            width: 50px;
+            width: 100px;
             height: 50px;
         }
         
