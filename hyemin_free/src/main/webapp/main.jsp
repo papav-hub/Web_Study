@@ -1,33 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/netflix.css">
     <title>main</title>
+
 </head>
-
-<style>
-	.wonder{
-	    background-image: url('media/wonder.jpg');
-	    background-size: cover;
-	    background-position: center center;
-	    height: 650px;
-	    width: auto;
-	}
-</style>
-
-
-
-
 
 <body class="fondo-cuerpo">
 
 
-
-
-
-<!-- 헤더 -->
+	<!-- 헤더 -->
     <header class="iconos">
         <div class="imagen-iconos">
             <img id="imagen" src="media/logo-netflix.png" alt="">
@@ -43,37 +32,17 @@
     
     
     
- <!-- main -->   
-    <section class="wonder">
-        <div>
-            <img src="media/wonderLogo.png" alt="">
-        </div>
-        <div class="sector-detalle">
-            <h1 class="titulo-peli">Extraordinario</h1><br><br>
-            <div class="sector-detalle-peli">
-                <h3 id="h1">2017</h3>
-                <h3 id="h2">13+</h3>
-                <h3 id="h3">1 h 53 min</h3>
-                <h3 id="h4">Peliculas infantiles y familiares</h3>
-                <br><br>
-            </div>
-            <p class="parrafoPeli">
-                Siemrpe se educó en casa, pero ahora este chico pasará a una <br>
-                escuela convensional, donde intentará encontrar amigos mientras <br>
-                soporta el acoso por sus rasgos faciales. <br>
-            </p><br><br>
-            <div class="protagonista-nombre">
-                <h4 id="prota">Protagonistas:</h4>
-                <p id="nombres"> Julio Roberts, Owen Wilson, Jacob Tremblay</p>
-            </div>
-            
-        </div>
-    </section>
+	<!-- main --> 
+	<jsp:include page="wonder.html" flush="true"/>
+
+
+
+
+    <!-- include  -->
+    <jsp:include page="index.jsp" flush="true"/>
     
     
-    
-    
-    <!-- <section>
+<!--     <section>
         <div class="mas-detalles">
             <h1>Más detalles</h1>
         </div>
@@ -96,7 +65,7 @@
             <h4>Protagonistas:</h4>
             <p> Inspirador,Emotivo,Optimistay</p>
         </div>
-    </section>
+    </section> -->
     
     
     
@@ -104,7 +73,7 @@
     
     
     
-    <section class="contenedor-de-grillas">
+    <!-- <section class="contenedor-de-grillas">
         <h1>Más peliculas y series</h1>
         <div class="grilla">
             <div class="columnas-imagenes">
@@ -217,4 +186,8 @@
     
     
 </body>
+
+
+
+
 </html>
