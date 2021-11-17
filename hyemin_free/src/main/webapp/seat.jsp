@@ -10,7 +10,7 @@
 	
 	
 	
-	<body>
+	<body class="cuerpo">
 		<div align=center>
 			<div class="seat-wrapper"></div>
 		</div>
