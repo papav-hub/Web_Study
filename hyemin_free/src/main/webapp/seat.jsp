@@ -80,11 +80,11 @@
 	            
 	            // DB에 있는 경우 미리 빨간색으로 하기////////////////////////////////////////////////////////////////////////////////////////////
 
-<%-- 				<% 
+				<% 
 				for(ReservedVO vo : reservedList){
 					String row_column = vo.getrow_column();
-				%> --%>
-				if(input.value == "35"){
+				%>
+				if(input.value == <%=row_column%>){
  	            	input.classList.add("booked"); // 이미 예약된 것은 검정색 처리
                     clicked = document.querySelectorAll(".clicked");
                     clicked.forEach((data) => {
@@ -119,10 +119,11 @@
 		                window.alert(selectedSeats); // 확인용
 		            })
 	            
-	           }  
+	           }
+				
+				<% } %>
 	            
- 	<%--            <% } %>
-	      --%>
+
 	        }
 	    }
 
