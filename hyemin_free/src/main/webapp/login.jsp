@@ -9,6 +9,13 @@
 	
 	
 	<body>
+		<div align=center>
+			<form action="LoginOk.jsp" method="post">
+				ID <input type="text" name="id"><br>
+				PASSWORD <input type="password" name="password"><br>
+				<input type="submit" value="LOGIN">
+			</form>
+		</div>
 	
 	</body>
 </html>
