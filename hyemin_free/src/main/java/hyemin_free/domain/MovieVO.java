@@ -4,11 +4,11 @@ public class MovieVO {
 	
 	private String movie_name;
 	private String movie_info;
-	private String movie_age;
+	private int movie_age;
 	private String movie_genre;
 	private String movie_image;
-	private String movie_row;
-	private String movie_column;
+	private int movie_row;
+	private int movie_column;
 	
 	
 	public String getMovie_name() {
@@ -23,10 +23,10 @@ public class MovieVO {
 	public void setMovie_info(String movie_info) {
 		this.movie_info = movie_info;
 	}
-	public String getMovie_age() {
+	public int getMovie_age() {
 		return movie_age;
 	}
-	public void setMovie_age(String movie_age) {
+	public void setMovie_age(int movie_age) {
 		this.movie_age = movie_age;
 	}
 	public String getMovie_genre() {
@@ -41,16 +41,16 @@ public class MovieVO {
 	public void setMovie_image(String movie_image) {
 		this.movie_image = movie_image;
 	}
-	public String getMovie_row() {
+	public int getMovie_row() {
 		return movie_row;
 	}
-	public void setMovie_row(String movie_row) {
+	public void setMovie_row(int movie_row) {
 		this.movie_row = movie_row;
 	}
-	public String getMovie_column() {
+	public int getMovie_column() {
 		return movie_column;
 	}
-	public void setMovie_column(String movie_column) {
+	public void setMovie_column(int movie_column) {
 		this.movie_column = movie_column;
 	}
 	

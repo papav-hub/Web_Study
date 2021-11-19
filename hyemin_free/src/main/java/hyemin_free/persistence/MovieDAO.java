@@ -32,11 +32,11 @@ public class MovieDAO {
 				MovieVO vo = new MovieVO();
 				vo.setMovie_name(rs.getString("movie_name"));
 				vo.setMovie_info(rs.getString("movie_info"));
-				vo.setMovie_age((rs.getString("movie_age")));
+				vo.setMovie_age(Integer.parseInt(rs.getString("movie_age")));
 				vo.setMovie_genre(rs.getString("movie_genre"));
 				vo.setMovie_image(rs.getString("movie_image"));
-				vo.setMovie_row((rs.getString("movie_row")));
-				vo.setMovie_column((rs.getString("movie_column")));
+				vo.setMovie_row(Integer.parseInt(rs.getString("movie_row")));
+				vo.setMovie_column(Integer.parseInt(rs.getString("movie_column")));
 				
 				movieList.add(vo);
 			}

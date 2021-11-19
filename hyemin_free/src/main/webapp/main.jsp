@@ -68,27 +68,7 @@
 
 
     <!-- include  -->
-
-		
-		
-		<section class="pelis-comentarios">
-        <div>
-            <h2 class="titulo1">로맨스 장르</h2>
-        </div>
-        <div class="imagen-descripcion1">
-            <div>
-            	<%
-					List<MovieVO> movieList = (List<MovieVO>)request.getAttribute("movieList");
-					for(MovieVO vo : movieList){
-						if(vo.getMovie_genre().equals("romance")){
-				%>
-                <a href="http://localhost:8080/hyemin_free/seat.jsp"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-                <%	} %>
-            </div>
-        </div>
-       </section>
-		
-<%-- 		<tr>
+    <%-- 
 			<td><%=vo.getMovie_name() %></td>
 			<td><%=vo.getMovie_info() %></td>
 			<td><%=vo.getMovie_age() %></td>
@@ -96,12 +76,54 @@
 			<td><%=vo.getMovie_image() %></td>
 			<td><%=vo.getMovie_row() %></td>
 			<td><%=vo.getMovie_column() %></td>
-		</tr> --%>
+	 --%>
+
+
 		
-		<%
-			}
-		%>
-		
+		<section class="pelis-comentarios">
+        <div>
+            <h2 class="titulo1">로맨스 장르</h2>
+        </div>
+        <div class="imagen-descripcion1">
+            <div>
+            	<% 
+					List<MovieVO> movieList = (List<MovieVO>)request.getAttribute("movieList");
+						for(MovieVO vo : movieList){
+				%>
+					<%
+						if(vo.getMovie_genre().equals("romance")){
+					%>
+	                	<a href="http://localhost:8080/hyemin_free/seat.jsp"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                <%		} %>
+            </div>
+        </div>
+       </section>
+       		
+				<%
+					}
+				%>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
     
     
 <!--     <section>
