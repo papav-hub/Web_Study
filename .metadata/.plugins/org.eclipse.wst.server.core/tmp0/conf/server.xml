@@ -153,7 +153,24 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jspbook" path="/jspbook" reloadable="true" source="org.eclipse.jst.jee.server:jspbook"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ChoiHyeMin_reg" path="/ChoiHyeMin_reg" reloadable="true" source="org.eclipse.jst.jee.server:ChoiHyeMin_reg"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hyemin_mvcdb" path="/hyemin_mvcdb" reloadable="true" source="org.eclipse.jst.jee.server:hyemin_mvcdb"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hyemin_free" path="/hyemin_free" reloadable="true" source="org.eclipse.jst.jee.server:hyemin_free"/></Host>
+      <Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jspbook" path="/jspbook" reloadable="true" source="org.eclipse.jst.jee.server:jspbook">
+
+    <!-- Default set of monitored resources. If one of these changes, the    -->
+    <!-- web application will be reloaded.                                   -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>WEB-INF/tomcat-web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+    
+    
+    <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxActive="5" maxIdle="3" maxWait="-1" name="jdbc/mysql" password="passwd" type="javax.sql.DataSource" url="jdbc:mysql://localhost/jspdb?allowPublicKeyRetrieval=true&amp;     useUnicode=true&amp;characterEncoding=utf8&amp;characterEncoding=utf8&amp;useSSL=false&amp;     serverTimezone=UTC" username="jspbook"/>
+    
+
+
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />
+    -->
+</Context><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ChoiHyeMin_reg" path="/ChoiHyeMin_reg" reloadable="true" source="org.eclipse.jst.jee.server:ChoiHyeMin_reg"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hyemin_mvcdb" path="/hyemin_mvcdb" reloadable="true" source="org.eclipse.jst.jee.server:hyemin_mvcdb"/><Context docBase="C:\Users\Hyemin\WEB\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hyemin_free" path="/hyemin_free" reloadable="true" source="org.eclipse.jst.jee.server:hyemin_free"/></Host>
     </Engine>
   </Service>
 </Server>

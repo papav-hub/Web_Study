@@ -33,8 +33,37 @@
     
     
 	<!-- main --> 
-	<jsp:include page="wonder.html" flush="true"/>
-
+	
+	<div style="background-image: url('<%="media/wonder.jpg"%>'); 
+				background-size: cover;
+	    		background-position: center center;
+	    		height: 650px;
+	    		width: auto;">
+		<section class="wonder">
+	        <div>
+	            <img src="media/wonderLogo.png" alt="">
+	        </div>
+	        <div class="sector-detalle">
+	            <h1 class="titulo-peli">WONDER</h1><br><br>
+	            <div class="sector-detalle-peli">
+	                <h3 id="h1">genre</h3>
+	                <h3 id="h2">age</h3>
+	                <br>
+	                <br>
+	            </div>
+	            
+	            <br>
+	            <p class="parrafoPeli">
+	                WonDer 영화 설명입니다. <br>
+	            </p><br><br>
+<!-- 	            <div class="protagonista-nombre">
+	                <h4 id="prota">출연</h4>
+	                <p id="nombres"> Julio Roberts, Owen Wilson, Jacob Tremblay</p>
+	            </div> -->
+	            
+	        </div>
+	    </section>
+	</div>
 
 
 
