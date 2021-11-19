@@ -27,17 +27,12 @@
 	
 	
 	<% 
-/* 		List<ReservedVO> reservedList = (List<ReservedVO>)request.getAttribute("reservedList");
+		List<ReservedVO> reservedList = (List<ReservedVO>)request.getAttribute("reservedList");
 		int movie_column = (int)request.getAttribute("movie_column");
 		int movie_row = (int)request.getAttribute("movie_row");
-		 */
+		
 	%>
-	
-	<%
-	
- 	int movie_column = 5;
-	int movie_row = 6;
-	%>
+
 
 	
 	

@@ -20,12 +20,15 @@ public class ReservedDAO {
 	public int getMovie_column(String movie_name) {
 		connect();
 		int movie_column = 0;
-		String sql = "select * from movie where movie_name=" + movie_name + "";
+		String sql = "select * from movie where movie_name='" + movie_name + "'";
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
-			movie_column = Integer.parseInt(rs.getString("movie_column"));
+			
+			while(rs.next()) {
+				movie_column = Integer.parseInt(rs.getString("movie_column"));
+			}
 			
 			rs.close();
 		}catch(SQLException e) {
@@ -39,12 +42,15 @@ public class ReservedDAO {
 	public int getMovie_row(String movie_name) {
 		connect();
 		int movie_row = 0;
-		String sql = "select * from movie where movie_name=" + movie_name + "";
+		String sql = "select * from movie where movie_name='" + movie_name + "'";
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
-			movie_row = Integer.parseInt(rs.getString("movie_row"));
+			
+			while(rs.next()) {
+				movie_row = Integer.parseInt(rs.getString("movie_row"));
+			}
 			
 			rs.close();
 		}catch(SQLException e) {
