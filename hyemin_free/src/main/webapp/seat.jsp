@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="hyemin_free.domain.*, java.util.List"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -26,6 +26,13 @@
 	</body>
 	
 	
+	<% 
+		List<ReservedVO> reservedList = (List<ReservedVO>)request.getAttribute("reservedList");
+		int movie_column = (int)request.getAttribute("movie_column");
+		int movie_row = (int)request.getAttribute("movie_row");
+	%>
+	
+	
 	<script>
 	    let test = [];
 	    let selectedSeats = new Array();
@@ -34,10 +41,10 @@
 	    let clicked = "";
 	    let div = "";
 	
-	    for (let i = 0; i < 7; i++) {
+	    for (let i = 0; i < movie_row; i++) {
 	        div = document.createElement("div");
 	        seatWrapper.append(div);
-	        for (let j = 0; j < 7; j++) {
+	        for (let j = 0; j < movie_column; j++) {
 	            const input = document.createElement('input');
 	            input.type = "button";
 	            input.name = "seats"
@@ -48,11 +55,11 @@
 	            mapping(input, i, j);
 	            div.append(input);
 
-	            
-	            
+	           
+/* 	            
 	            
 	            // DB에 있는 경우 미리 빨간색으로 하기////////////////////////////////////////////////////////////////////////////////////////////
-	            if(input.value == 3 + "" + 5){
+	            if(reservedList.contain(input.value)){
 	            	input.classList.add("booked"); // 이미 예약된 것은 검정색 처리
                     clicked = document.querySelectorAll(".clicked");
                     clicked.forEach((data) => {
@@ -60,7 +67,7 @@
                     })
 	            }
 	            // DB에 없는 경우 clickListener 수행
-	            else{
+	            else{ */
 	            
 		            input.addEventListener('click', function(e) {
 		                //console.log(e.target.value);
@@ -87,27 +94,13 @@
 		                window.alert(selectedSeats); // 확인용
 		            })
 	            
-	            }            
+	            /*  }*/       
 	     
 	        }
 	    }
 	
 	    function mapping(input, i, j) {
-	        if (i === 0) {
-	            input.value = i + "" + j;
-	        } else if (i === 1) {
-	            input.value = i + "" + j;
-	        } else if (i === 2) {
-	            input.value = i + "" + j;
-	        } else if (i === 3) {
-	            input.value = i + "" + j;
-	        } else if (i === 4) {
-	            input.value = i + "" + j;
-	        } else if (i === 5) {
-	            input.value = i + "" + j;
-	        } else if (i === 6) {
-	            input.value = i + "" + j;
-	        }
+	    	input.value = i + "" + j;
 	    }
 	</script>
 </html>
