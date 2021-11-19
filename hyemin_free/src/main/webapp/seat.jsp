@@ -31,19 +31,7 @@
 		int movie_column = (int)request.getAttribute("movie_column");
 		int movie_row = (int)request.getAttribute("movie_row");
 	%>
-	
-	<% 
-		for(ReservedVO vo : reservedList){
-			String row_column = vo.getrow_column();
-			if(vo.getrow_column().equals("24")){
-	%>
-		<p>24</p>
-		<p><%=row_column %></p>
-		
-	<%
-		}
-		}
-	%>
+
 
 
 
@@ -128,4 +116,19 @@
 	    }
 
 	</script>
+	
+	
+	
+		<% 
+		for(ReservedVO vo : reservedList){
+			String row_column = vo.getrow_column();
+			if(vo.getrow_column().equals("24")){
+	%>
+		<p>24</p>
+		<p><%=row_column %></p>
+		
+	<%
+		}
+		}
+	%>
 </html>

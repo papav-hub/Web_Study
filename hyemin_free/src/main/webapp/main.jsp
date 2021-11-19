@@ -23,8 +23,8 @@
         </div>
         <div class="panel-inicio">
            <!--  <h3 id="title1">PELICULAS Y SERIES ILIMITADAS</h3> -->
-            <a id="title2" href=""><h3>로그인</h3></a>
-            <a id="title3" href=""><h3>관리자 로그인</h3></a>
+            <a id="title2" href="http://localhost:8080/hyemin_free/login.jsp"><h3>로그인</h3></a>
+            <a id="title3" href="http://localhost:8080/hyemin_free/joinin.sjp"><h3>회원가입</h3></a>
         </div>
     </header>
     
@@ -117,7 +117,7 @@
 					<%
 						if(vo.getMovie_genre().equals("action")){
 					%>
-	                	<a href="http://localhost:8080/hyemin_free/seat.jsp?<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
 	                <%		} %>
 	                   		
 				<%
@@ -141,7 +141,7 @@
 					<%
 						if(vo.getMovie_genre().equals("thriller")){
 					%>
-	                	<a href="http://localhost:8080/hyemin_free/seat.jsp?<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
 	                <%		} %>
 	                   		
 				<%
@@ -165,7 +165,7 @@
 					<%
 						if(vo.getMovie_genre().equals("etc")){
 					%>
-	                	<a href="http://localhost:8080/hyemin_free/seat.jsp?<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
 	                <%		} %>
 	                   		
 				<%
