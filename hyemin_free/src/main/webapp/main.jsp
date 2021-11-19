@@ -67,7 +67,7 @@
 
 
 
-    <!-- include  -->
+    <!-- INDEX LIST  -->
     <%-- 
 			<td><%=vo.getMovie_name() %></td>
 			<td><%=vo.getMovie_info() %></td>
@@ -79,7 +79,7 @@
 	 --%>
 
 
-		
+		<!-- ROMANCE  -->
 		<section class="pelis-comentarios">
         <div>
             <h2 class="titulo1">로맨스 장르</h2>
@@ -95,29 +95,87 @@
 					%>
 	                	<a href="http://localhost:8080/hyemin_free/seat.jsp"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
 	                <%		} %>
-            </div>
-        </div>
-       </section>
-       		
+	                   		
 				<%
 					}
 				%>
+            </div>
+        </div>
+       </section>
 				
+			
+		<!-- ACTION  -->	
+		<section class="pelis-comentarios">
+        <div>
+            <h2 class="titulo1">액션 장르</h2>
+        </div>
+        <div class="imagen-descripcion1">
+            <div>
+            	<% 
+						for(MovieVO vo : movieList){
+				%>
+					<%
+						if(vo.getMovie_genre().equals("action")){
+					%>
+	                	<a href="http://localhost:8080/hyemin_free/seat.jsp"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                <%		} %>
+	                   		
+				<%
+					}
+				%>
+            </div>
+        </div>
+       </section>
+       
+       
+       <!-- THRILLER  -->
+       <section class="pelis-comentarios">
+        <div>
+            <h2 class="titulo1">스릴러 장르</h2>
+        </div>
+        <div class="imagen-descripcion1">
+            <div>
+            	<% 
+						for(MovieVO vo : movieList){
+				%>
+					<%
+						if(vo.getMovie_genre().equals("thriller")){
+					%>
+	                	<a href="http://localhost:8080/hyemin_free/seat.jsp"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                <%		} %>
+	                   		
+				<%
+					}
+				%>
+            </div>
+        </div>
+       </section>
+       
+       
+       <!-- ETC  -->
+       <section class="pelis-comentarios">
+        <div>
+            <h2 class="titulo1">스릴러 장르</h2>
+        </div>
+        <div class="imagen-descripcion1">
+            <div>
+            	<% 
+						for(MovieVO vo : movieList){
+				%>
+					<%
+						if(vo.getMovie_genre().equals("etc")){
+					%>
+	                	<a href="http://localhost:8080/hyemin_free/seat.jsp"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                <%		} %>
+	                   		
+				<%
+					}
+				%>
+            </div>
+        </div>
+       </section>		
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+
 				
 				
 				
