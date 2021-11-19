@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="hyemin_free.domain.*, java.util.List"%>
 <!DOCTYPE html>
 <html>
 
@@ -68,7 +68,38 @@
 
 
     <!-- include  -->
-    <jsp:include page="index.jsp" flush="true"/>
+    <table>
+ 		<tr>
+			<td>movie_name</td>
+			<td>movie_info</td>
+			<td>movie_age</td>
+			<td>movie_genre</td>
+			<td>movie_image</td>
+			<td>movie_row</td>
+			<td>movie_column</td>
+		</tr>
+
+		
+		<%
+			List<MovieVO> movieList = (List<MovieVO>)request.getAttribute("movieList");
+			for(MovieVO vo : movieList){	
+		%>
+		
+		<tr>
+			<td><%=vo.getMovie_name() %></td>
+			<td><%=vo.getMovie_info() %></td>
+			<td><%=vo.getMovie_age() %></td>
+			<td><%=vo.getMovie_genre() %></td>
+			<td><%=vo.getMovie_image() %></td>
+			<td><%=vo.getMovie_row() %></td>
+			<td><%=vo.getMovie_column() %></td>
+		</tr>
+		
+		<%
+			}
+		%>
+		
+	</table>
     
     
 <!--     <section>
