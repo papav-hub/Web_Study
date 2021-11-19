@@ -91,6 +91,8 @@
                         selectedSeats.push(data.value);
                     }) 
 	            }
+				
+				<% } %>
 	            // DB에 없는 경우 clickListener 수행
 	            else{  
 	            
@@ -120,8 +122,6 @@
 		            })
 	            
 	           }
-				
-				<% } %>
 	            
 
 	        }
