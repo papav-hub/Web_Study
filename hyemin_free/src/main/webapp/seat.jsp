@@ -27,13 +27,25 @@
 	
 	
 	<% 
-		List<ReservedVO> reservedList = (List<ReservedVO>)request.getAttribute("reservedList");
+/* 		List<ReservedVO> reservedList = (List<ReservedVO>)request.getAttribute("reservedList");
 		int movie_column = (int)request.getAttribute("movie_column");
 		int movie_row = (int)request.getAttribute("movie_row");
+		 */
 	%>
+	
+	<%
+	
+ 	int movie_column = 5;
+	int movie_row = 6;
+	%>
+
 	
 	
 	<script>
+		
+		
+
+	
 	    let test = [];
 	    let selectedSeats = new Array();
 	    let selectedSeatsMap = [];
@@ -41,10 +53,10 @@
 	    let clicked = "";
 	    let div = "";
 	
-	    for (let i = 0; i < movie_row; i++) {
+	    for (let i = 0; i < <%=movie_row%>; i++) {
 	        div = document.createElement("div");
 	        seatWrapper.append(div);
-	        for (let j = 0; j < movie_column; j++) {
+	        for (let j = 0; j < <%=movie_column%>; j++) {
 	            const input = document.createElement('input');
 	            input.type = "button";
 	            input.name = "seats"

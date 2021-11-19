@@ -20,7 +20,7 @@ public class ReservedDAO {
 	public int getMovie_column(String movie_name) {
 		connect();
 		int movie_column = 0;
-		String sql = "select * from movie where movie_name='" + movie_name + "'";
+		String sql = "select * from movie where movie_name=" + movie_name + "";
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
@@ -39,7 +39,7 @@ public class ReservedDAO {
 	public int getMovie_row(String movie_name) {
 		connect();
 		int movie_row = 0;
-		String sql = "select * from movie where movie_name='" + movie_name + "'";
+		String sql = "select * from movie where movie_name=" + movie_name + "";
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
