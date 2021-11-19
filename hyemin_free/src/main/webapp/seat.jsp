@@ -30,8 +30,21 @@
 		List<ReservedVO> reservedList = (List<ReservedVO>)request.getAttribute("reservedList");
 		int movie_column = (int)request.getAttribute("movie_column");
 		int movie_row = (int)request.getAttribute("movie_row");
-		
 	%>
+	
+	<% 
+		for(ReservedVO vo : reservedList){
+			String row_column = vo.getrow_column();
+			if(vo.getrow_column().equals("24")){
+	%>
+		<p>24</p>
+		<p><%=row_column %></p>
+		
+	<%
+		}
+		}
+	%>
+
 
 
 	
@@ -59,22 +72,27 @@
 	            
 	            
 	            //3중포문을 사용하지 않기위해 
-	            mapping(input, i, j);
+	            input.value = i + "" + j;
 	            div.append(input);
 
 	           
-/* 	            
+           
 	            
 	            // DB에 있는 경우 미리 빨간색으로 하기////////////////////////////////////////////////////////////////////////////////////////////
-	            if(reservedList.contain(input.value)){
-	            	input.classList.add("booked"); // 이미 예약된 것은 검정색 처리
+
+<%-- 				<% 
+				for(ReservedVO vo : reservedList){
+					String row_column = vo.getrow_column();
+				%> --%>
+				if(input.value == "35"){
+ 	            	input.classList.add("booked"); // 이미 예약된 것은 검정색 처리
                     clicked = document.querySelectorAll(".clicked");
                     clicked.forEach((data) => {
                         selectedSeats.push(data.value);
-                    })
+                    }) 
 	            }
 	            // DB에 없는 경우 clickListener 수행
-	            else{ */
+	            else{  
 	            
 		            input.addEventListener('click', function(e) {
 		                //console.log(e.target.value);
@@ -101,13 +119,12 @@
 		                window.alert(selectedSeats); // 확인용
 		            })
 	            
-	            /*  }*/       
-	     
+	           }  
+	            
+ 	<%--            <% } %>
+	      --%>
 	        }
 	    }
-	
-	    function mapping(input, i, j) {
-	    	input.value = i + "" + j;
-	    }
+
 	</script>
 </html>
