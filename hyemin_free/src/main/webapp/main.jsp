@@ -22,13 +22,13 @@
             <img id="imagen" src="media/logo-netflix.png" alt="">
         </div>
         <div class="panel-inicio">
-           <!--  <h3 id="title1">PELICULAS Y SERIES ILIMITADAS</h3> -->
+           
+            <% if(session.getAttribute("id").equals("null")){ %>
             <a id="title2" href="http://localhost:8080/hyemin_free/login.jsp"><h3>로그인</h3></a>
             <a id="title3" href="http://localhost:8080/hyemin_free/joinin.sjp"><h3>회원가입</h3></a>
+            <% } %>
         </div>
-    </header>
-    
-    
+    </header>   
     
     
     
