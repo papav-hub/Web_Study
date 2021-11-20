@@ -69,26 +69,13 @@
 	</div>
 
 
-
-    <!-- INDEX LIST  -->
-    <%-- 
-			<td><%=vo.getMovie_name() %></td>
-			<td><%=vo.getMovie_info() %></td>
-			<td><%=vo.getMovie_age() %></td>
-			<td><%=vo.getMovie_genre() %></td>
-			<td><%=vo.getMovie_image() %></td>
-			<td><%=vo.getMovie_row() %></td>
-			<td><%=vo.getMovie_column() %></td>
-	 --%>
-
-
-		<!-- ROMANCE  -->
+		<!-- 1.ROMANCE  -->
 		<section class="pelis-comentarios">
         <div>
             <h2 class="titulo1">로맨스 장르</h2>
         </div>
         <div class="imagen-descripcion1">
-            <div>
+            <div style="overflow-y:hidden; white-space:nowrap;">
             	<% 
 					List<MovieVO> movieList = (List<MovieVO>)request.getAttribute("movieList");
 						for(MovieVO vo : movieList){
@@ -107,13 +94,13 @@
       
 				
 			
-		<!-- ACTION  -->	
+		<!-- 2.ACTION  -->	
 		<section class="pelis-comentarios">
         <div>
             <h2 class="titulo1">액션 장르</h2>
         </div>
         <div class="imagen-descripcion1">
-            <div>
+            <div style="overflow-y:hidden; white-space:nowrap;">
             	<% 
 						for(MovieVO vo : movieList){
 				%>
@@ -130,13 +117,13 @@
        </section>
        
        
-       <!-- THRILLER  -->
+       <!-- 3.THRILLER  -->
        <section class="pelis-comentarios">
         <div>
             <h2 class="titulo1">스릴러 장르</h2>
         </div>
         <div class="imagen-descripcion1">
-            <div>
+            <div style="overflow-y:hidden; white-space:nowrap;">
             	<% 
 						for(MovieVO vo : movieList){
 				%>
@@ -153,13 +140,13 @@
        </section>
        
        
-       <!-- ETC  -->
+       <!-- 4.ETC  -->
        <section class="pelis-comentarios">
         <div>
             <h2 class="titulo1">스릴러 장르</h2>
         </div>
         <div class="imagen-descripcion1">
-            <div>
+            <div style="overflow-y:hidden; white-space:nowrap;">
             	<% 
 						for(MovieVO vo : movieList){
 				%>
