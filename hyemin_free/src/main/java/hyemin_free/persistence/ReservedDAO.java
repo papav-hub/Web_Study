@@ -49,8 +49,8 @@ public class ReservedDAO {
 			while(rs.next()) {
 				ReservedVO vo = new ReservedVO();
 				vo.setMovie_name(rs.getString("movie_name"));
-				vo.setCustomer_id(rs.getString("movie_info"));
-				vo.setrow_column(rs.getString("movie_age"));
+				vo.setCustomer_id(rs.getString("customer_id"));
+				vo.setrow_column(rs.getString("row_column"));
 				
 				myReservedList.add(vo);
 			}

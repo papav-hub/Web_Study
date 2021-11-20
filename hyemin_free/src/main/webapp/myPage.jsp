@@ -16,17 +16,21 @@
 	<body>
 	<table>
 		<tr>
-			<td><h2 class="titulo1">영화 제목</h2></td>
+			<td><h2 class="titulo1">영화제목</h2></td>
 			<td><h2 class="titulo1">좌석</h2></td>
+			<td><h2 class="titulo1"><%=addReserved_result %></h2></td>
 		</tr>
+		
+		
 		<%
 			for(ReservedVO vo : myReservedList){
 		%>
-			<tr>
-				<td><h2 class="titulo1"><%=vo.getMovie_name() %></h2></td>
-				<td><h2 class="titulo1"><%=vo.getrow_column() %></h2></td>
-			</tr>
+		<tr>
+			<td><h2 class="titulo1"><%=vo.getMovie_name() %></h2></td>
+			<td><h2 class="titulo1"><%=vo.getrow_column() %></h2></td>
+		</tr>
 		<% } %>
+
 	</table>
 	</body>
 </html>
