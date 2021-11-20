@@ -54,6 +54,7 @@ public class ReservedServlet extends HttpServlet {
 			request.setAttribute("reservedList", reservedList);
 			request.setAttribute("movie_column", movie_column);
 			request.setAttribute("movie_row", movie_row);
+			request.setAttribute("movie_name", movie_name);
 			RequestDispatcher view = request.getRequestDispatcher("seat.jsp");
 			view.forward(request, response);
 		}

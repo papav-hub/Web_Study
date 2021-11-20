@@ -12,11 +12,12 @@
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html charset=UTF-8");
 		
-		String selectedSeats = "";
-		selectedSeats = request.getParameter("selectedSeats");
+		String selectedSeats = request.getParameter("selectedSeats");
+		String movie_name = request.getParameter("movie_name");
 	%>
 	
 	<p><%=selectedSeats %></p>
+	<p><%=movie_name %></p>
 	
 	
 	

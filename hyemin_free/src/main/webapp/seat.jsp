@@ -25,11 +25,13 @@
 		</div>
 	</body>
 	
+
 	
 	<% 
 		List<ReservedVO> reservedList = (List<ReservedVO>)request.getAttribute("reservedList");
 		int movie_column = (int)request.getAttribute("movie_column");
 		int movie_row = (int)request.getAttribute("movie_row");
+		String movie_name = (String)request.getAttribute("movie_name");
 	%>
 
 
@@ -37,13 +39,15 @@
 
 	
 	
-	<script>
+	<script language=javascript>
 	    let test = [];
 	    let selectedSeats = new Array();
 	    let selectedSeatsMap = [];
 	    const seatWrapper = document.querySelector(".seat-wrapper");
 	    let clicked = "";
 	    let div = "";
+	    
+	    var movie_name = "<%=movie_name%>";
 	
 	    for (let i = 0; i < <%=movie_row%>; i++) {
 	        div = document.createElement("div");
@@ -110,7 +114,7 @@
 	    }
 	    	    
 	    function openPopup(){
-	    	  window.open('receipt.jsp?selectedSeats=' + selectedSeats);
+	    	  window.open('receipt.jsp?selectedSeats=' + selectedSeats + '&movie_name=' + movie_name);
 	    }
 
 	</script> 
