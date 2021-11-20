@@ -29,6 +29,7 @@
             <% }else{ %>
             	<a id="title3"><h3><%=session.getAttribute("id")%> 님</h3></a>
             <% } %>
+            
         </div>
     </header>   
     
@@ -94,16 +95,16 @@
 				%>
 					<%
 						if(vo.getMovie_genre().equals("romance")){
+							if(session.getAttribute("id").equals("null")){
 					%>
-	                	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-	                <%		} %>
-	                   		
-				<%
-					}
-				%>
+	                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                <%	}else{ %>
+	                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+					<% }}} %>
             </div>
         </div>
        </section>
+      
 				
 			
 		<!-- ACTION  -->	
@@ -118,13 +119,12 @@
 				%>
 					<%
 						if(vo.getMovie_genre().equals("action")){
-					%>
-	                	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-	                <%		} %>
-	                   		
-				<%
-					}
-				%>
+							if(session.getAttribute("id").equals("null")){
+						%>
+		                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+		                <%	}else{ %>
+		                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+						<% }}} %>
             </div>
         </div>
        </section>
@@ -142,13 +142,12 @@
 				%>
 					<%
 						if(vo.getMovie_genre().equals("thriller")){
-					%>
-	                	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-	                <%		} %>
-	                   		
-				<%
-					}
-				%>
+							if(session.getAttribute("id").equals("null")){
+						%>
+		                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+		                <%	}else{ %>
+		                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+						<% }}} %>
             </div>
         </div>
        </section>
@@ -166,13 +165,12 @@
 				%>
 					<%
 						if(vo.getMovie_genre().equals("etc")){
-					%>
-	                	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-	                <%		} %>
-	                   		
-				<%
-					}
-				%>
+							if(session.getAttribute("id").equals("null")){
+						%>
+		                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+		                <%	}else{ %>
+		                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+						<% }}} %>
             </div>
         </div>
        </section>		
