@@ -123,7 +123,7 @@
 	
 	
 	
-	<button type="button" onClick="openPopup()">결제하기</button>
+	<button type="button" onClick="openPopup()">영수증 보기</button>
 	
 <!-- 	
 		<div class="panel-inicio">

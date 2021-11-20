@@ -19,3 +19,20 @@
             background-color: black;
             color: white;
         }
+        
+        table
+		{
+			margin-left:auto;
+			margin-right:auto;
+		}
+	
+		tr td
+		{
+			font-size : 10pt;
+			border:1px solid lightgray;
+			height:30px;
+			padding:5px;
+			color:#000000;
+			background-color:#EAF2D3;
+		}
+	
