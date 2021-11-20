@@ -50,7 +50,7 @@
 	</div>
 	
 	<div class="panel-inicio">
-		<a id="title2" href="http://localhost:8080/hyemin_free/login.jsp"><h3>결제하기</h3></a>
+		<a id="title2" href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=<%=id %>&movie_name=<%=movie_name %>&row_column=<%=selectedSeats %>"><h3>결제하기</h3></a>
     </div>
 	
 	</body>

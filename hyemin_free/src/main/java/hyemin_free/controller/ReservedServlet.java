@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import hyemin_free.domain.MovieVO;
 import hyemin_free.domain.ReservedVO;
+import hyemin_free.persistence.CustomerDAO;
 import hyemin_free.persistence.MovieDAO;
 import hyemin_free.persistence.ReservedDAO;
 
@@ -57,6 +58,26 @@ public class ReservedServlet extends HttpServlet {
 			request.setAttribute("movie_name", movie_name);
 			RequestDispatcher view = request.getRequestDispatcher("seat.jsp");
 			view.forward(request, response);
+			
+		}else if(cmdReq.equals("payment")) {
+			// reserved add
+			ReservedVO RVO = new ReservedVO();
+			RVO.setCustomer_id(request.getParameter("customer_id"));
+			RVO.setMovie_name(request.getParameter("movie_name"));
+			RVO.setrow_column(request.getParameter("row_column"));
+			
+			ReservedDAO RDAO = new ReservedDAO();
+			boolean add = RDAO.add(RVO);
+			request.setAttribute("addReserved_result", add);
+			
+			// reserved list
+			ReservedDAO dao = new ReservedDAO();
+			ArrayList<ReservedVO> myReservedList = dao.getmyReservedList(request.getParameter("customer_id"));
+			request.setAttribute("myReservedList", myReservedList);
+			
+			RequestDispatcher view = request.getRequestDispatcher("myPage.jsp");
+			view.forward(request, response);
+
 		}
 	}
 
@@ -65,7 +86,8 @@ public class ReservedServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		// doGet(request, response);
+
 	}
 
 }

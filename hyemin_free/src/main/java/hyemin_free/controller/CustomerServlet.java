@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import hyemin_free.domain.MovieVO;
+import hyemin_free.domain.ReservedVO;
 import hyemin_free.persistence.CustomerDAO;
 import hyemin_free.persistence.MovieDAO;
+import hyemin_free.persistence.ReservedDAO;
 
 /**
  * Servlet implementation class CustomerServlet
@@ -42,12 +44,13 @@ public class CustomerServlet extends HttpServlet {
 		String cmdReq = "";
 		cmdReq = request.getParameter("cmdReq");
 		
-		if(cmdReq.equals("login")) {
+		if(cmdReq.equals("payment")) {
 			CustomerDAO dao = new CustomerDAO();
 			/*
 			 * ArrayList<MovieVO> movieList = dao.getMovieList();
-			 * request.setAttribute("movieList", movieList); RequestDispatcher view =
-			 * request.getRequestDispatcher("main.jsp"); view.forward(request, response);
+			 * request.setAttribute("movieList", movieList); 
+			 * RequestDispatcher view = request.getRequestDispatcher("main.jsp"); 
+			 * view.forward(request, response);
 			 */
 		}
 	}
@@ -57,7 +60,9 @@ public class CustomerServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		// doGet(request, response);
+		
+		
 	}
 
 }

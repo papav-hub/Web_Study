@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import hyemin_free.domain.MovieVO;
 import hyemin_free.domain.ReservedVO;
 
 public class ReservedDAO {
@@ -16,6 +17,53 @@ public class ReservedDAO {
 	
 	String jdbc_driver = "com.mysql.cj.jdbc.Driver";
 	String jdbc_url = "jdbc:mysql://localhost/jspdb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC";
+	
+	
+	public boolean add(ReservedVO vo) {
+		connect();
+		String sql = "insert into reserved values (?,?,?)";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, vo.getMovie_name());
+			pstmt.setString(2, vo.getCustomer_id());
+			pstmt.setString(3, vo.getrow_column());
+			pstmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}finally {
+			disconnect();
+		}
+		return true;
+	}
+	
+	public ArrayList<ReservedVO> getmyReservedList(String customer_id) {
+		connect();
+		ArrayList<ReservedVO> myReservedList = new ArrayList<ReservedVO>();
+		String sql = "select * from reserved where customer_id='" + customer_id + "'";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			ResultSet rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				ReservedVO vo = new ReservedVO();
+				vo.setMovie_name(rs.getString("movie_name"));
+				vo.setCustomer_id(rs.getString("movie_info"));
+				vo.setrow_column(rs.getString("movie_age"));
+				
+				myReservedList.add(vo);
+			}
+			rs.close();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			disconnect();
+		}
+		return myReservedList;
+	}
+	
+	
 	
 	public int getMovie_column(String movie_name) {
 		connect();

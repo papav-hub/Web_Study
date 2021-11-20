@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import hyemin_free.domain.MovieVO;
-
 public class CustomerDAO {
 	
 	Connection conn = null;
