@@ -38,10 +38,6 @@
 	
 	
 	<script>
-		
-		
-
-	
 	    let test = [];
 	    let selectedSeats = new Array();
 	    let selectedSeatsMap = [];
@@ -66,7 +62,7 @@
 	           
            
 	            
-	            // DB에 있는 경우 미리 빨간색으로 하기////////////////////////////////////////////////////////////////////////////////////////////
+	            // DB에 있는 경우 미리 검정색!으로 하기////////////////////////////////////////////////////////////////////////////////////////////
 
 				<% 
 				for(ReservedVO vo : reservedList){
@@ -97,38 +93,40 @@
 		                    clicked.forEach((data) => {
 		                        selectedSeats.push(data.value);
 		                    });
+		                    
 	
 		                } else {//click class가 존재하지 않을때 (추가해주는 toggle)
 		                    input.classList.add("clicked");
 		                    clicked = document.querySelectorAll(".clicked");
 		                    clicked.forEach((data) => {
 		                        selectedSeats.push(data.value);
-		                    })
-		                }
-		                console.log(selectedSeats);
-		                window.alert(selectedSeats); // 확인용
-		            })
-	            
+		                    });
+		                }   
+		                /* console.log(selectedSeats);
+		                window.alert(selectedSeats); // 확인용  */
+		            })	            
 	           }
-	            
-
 	        }
 	    }
+	    	    
+	    function openPopup(){
+	    	  window.open('receipt.jsp?selectedSeats=' + selectedSeats);
+	    }
 
-	</script>
+	</script> 
+	<!--  document.write  -->
 	
 	
 	
-		<% 
-		for(ReservedVO vo : reservedList){
-			String row_column = vo.getrow_column();
-			if(vo.getrow_column().equals("24")){
-	%>
-		<p>24</p>
-		<p><%=row_column %></p>
-		
-	<%
-		}
-		}
-	%>
+	
+	<button type="button" onClick="openPopup()">결제하기</button>
+	
+<!-- 	
+		<div class="panel-inicio">
+			<a id="title2" href="http://localhost:8080/hyemin_free/receipt.jsp"><h3>결제하기</h3></a>
+		</div> 
+-->
+	
+	
+
 </html>

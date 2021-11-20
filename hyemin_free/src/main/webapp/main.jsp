@@ -10,7 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/netflix.css">
     <title>main</title>
-
 </head>
 
 <body class="fondo-cuerpo">
