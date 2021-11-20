@@ -106,10 +106,15 @@
 		                        selectedSeats.push(data.value);
 		                    });
 		                }   
+		                openPopup();
 		                /* console.log(selectedSeats);
 		                window.alert(selectedSeats); // 확인용  */
-		            })	            
+		            })	
+		            
+		            
 	           }
+	            
+	            
 	        }
 	    }
 	    	    
@@ -123,7 +128,7 @@
 	
 	
 	
-	<button type="button" onClick="openPopup()">영수증 보기</button>
+	<!-- <button type="button" onClick="openPopup()">영수증 보기</button> -->
 	
 <!-- 	
 		<div class="panel-inicio">
