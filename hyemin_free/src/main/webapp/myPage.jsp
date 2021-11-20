@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>MYPAGE</title>
 		<link rel="stylesheet" href="css/seat.css">
+		<link rel="stylesheet" href="css/netflix.css">
 	</head>
 	
 	<%
@@ -13,7 +14,13 @@
 		boolean addReserved_result = (boolean)request.getAttribute("addReserved_result");
 	%>
 	
-	<body>
+	<header class="iconos">
+        <div class="imagen-iconos">
+            <a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
+        </div>
+    </header>
+	
+	<body style='background-color: black;'>
 	<table>
 		<tr>
 			<td><h2 class="titulo1">영화제목</h2></td>
