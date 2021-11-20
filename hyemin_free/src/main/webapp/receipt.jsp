@@ -5,7 +5,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>RECEIPT</title>
+		<link rel="stylesheet" href="css/netflix.css">
 	</head>
+	
+	<header class="iconos">
+        <div class="imagen-iconos">
+            <a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
+        </div>
+    </header>
 	
 	
 	<%
@@ -18,8 +25,6 @@
 	
 	<p><%=selectedSeats %></p>
 	<p><%=movie_name %></p>
-	
-	
 	
 	<body>
 	

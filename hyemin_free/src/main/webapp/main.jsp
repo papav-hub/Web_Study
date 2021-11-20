@@ -18,7 +18,7 @@
 	<!-- 헤더 -->
     <header class="iconos">
         <div class="imagen-iconos">
-            <img id="imagen" src="media/logo-netflix.png" alt="">
+            <a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
         </div>
         <div class="panel-inicio">
            

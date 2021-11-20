@@ -5,7 +5,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>LOGIN CHECK</title>
+		<link rel="stylesheet" href="css/netflix.css">
 	</head>
+	
+	<header class="iconos">
+        <div class="imagen-iconos">
+            <a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
+        </div>
+    </header>
 	
 	<meta http-equiv="refresh" content="2; url=http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list">
 	
