@@ -24,8 +24,10 @@
         <div class="panel-inicio">
            
             <% if(session.getAttribute("id").equals("null")){ %>
-            <a id="title2" href="http://localhost:8080/hyemin_free/login.jsp"><h3>로그인</h3></a>
-            <a id="title3" href="http://localhost:8080/hyemin_free/joinin.sjp"><h3>회원가입</h3></a>
+	            <a id="title2" href="http://localhost:8080/hyemin_free/login.jsp"><h3>로그인</h3></a>
+	            <a id="title3" href="http://localhost:8080/hyemin_free/joinin.jsp"><h3>회원가입</h3></a>
+            <% }else{ %>
+            	<a id="title3"><h3><%=session.getAttribute("id")%> 님</h3></a>
             <% } %>
         </div>
     </header>   
