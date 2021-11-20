@@ -7,8 +7,6 @@
     <fullyQualifiedTypeName name="org.json.JSONObject"/>
     <fullyQualifiedTypeName name="org.json.JSONException"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="kpu.web.club.persistence.StudentDAO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -20,5 +18,11 @@
     <fullyQualifiedTypeName name="javax.servlet.jsp.JspException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="hyemin_free.persistence.MovieDAO"/>
+    <fullyQualifiedTypeName name="hyemin_free.domain.MovieVO"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="hyemin_free.persistence.ReservedDAO"/>
+    <fullyQualifiedTypeName name="hyemin_free.domain.ReservedVO"/>
 </qualifiedTypeNameHistroy>
