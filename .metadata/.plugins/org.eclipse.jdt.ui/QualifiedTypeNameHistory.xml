@@ -24,5 +24,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="hyemin_free.persistence.ReservedDAO"/>
+    <fullyQualifiedTypeName name="hyemin_free.persistence.CustomerDAO"/>
     <fullyQualifiedTypeName name="hyemin_free.domain.ReservedVO"/>
 </qualifiedTypeNameHistroy>
