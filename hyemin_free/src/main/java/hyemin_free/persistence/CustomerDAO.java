@@ -39,6 +39,25 @@ public class CustomerDAO {
 		}
 		return false;
 	}
+	//insert into customer values ('admin', 'admin');
+	
+	public boolean joinin(String id, String password) {
+		connect();
+		String sql = "insert into customer values (?, ?)";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, password);
+			pstmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}finally {
+			disconnect();
+		}
+		return true;
+	}
 	
 	
 	void connect() {
@@ -66,4 +85,5 @@ public class CustomerDAO {
 			}
 		}
 	}
+
 }
