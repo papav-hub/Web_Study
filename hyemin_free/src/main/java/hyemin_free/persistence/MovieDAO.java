@@ -49,6 +49,34 @@ public class MovieDAO {
 		return movieList;
 	}
 	
+	public MovieVO getInfofromName(String movie_name) {
+		connect();
+		ArrayList<MovieVO> movieList = new ArrayList<MovieVO>();
+		String sql = "select * from movie where movie_name='" + movie_name + "'";
+		MovieVO vo = new MovieVO();
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			ResultSet rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				vo.setMovie_name(rs.getString("movie_name"));
+				vo.setMovie_info(rs.getString("movie_info"));
+				vo.setMovie_age(Integer.parseInt(rs.getString("movie_age")));
+				vo.setMovie_genre(rs.getString("movie_genre"));
+				vo.setMovie_image(rs.getString("movie_image"));
+				vo.setMovie_row(Integer.parseInt(rs.getString("movie_row")));
+				vo.setMovie_column(Integer.parseInt(rs.getString("movie_column")));
+			}
+
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			disconnect();
+		}
+		return vo;
+	}
+	
 	public boolean add(MovieVO vo) {
 		connect();
 		String sql = "insert into movie values (?,?,?,?,?,?,?)";
@@ -99,5 +127,6 @@ public class MovieDAO {
 			}
 		}
 	}
+
 
 }

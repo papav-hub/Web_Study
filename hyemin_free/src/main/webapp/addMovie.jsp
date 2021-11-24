@@ -19,6 +19,7 @@
 					<li>movie_info : <input type="text" name="movie_info"></li>
 					<li>movie_age : <input type="text" name="movie_age"></li>
 					<li>movie_genre  <select name="movie_genre">
+							<option value="" selected disabled hidden>선택해주세요.</option>
 							<option value="romance">romance</option>
 							<option value="action">action</option>
 							<option value="thriller">thriller</option>

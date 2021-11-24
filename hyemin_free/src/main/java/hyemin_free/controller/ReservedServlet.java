@@ -44,10 +44,10 @@ public class ReservedServlet extends HttpServlet {
 		String cmdReq = "";
 		cmdReq = request.getParameter("cmdReq");
 		
-		String movie_name = "";
-		movie_name = request.getParameter("movie_name");
-		
 		if(cmdReq.equals("list")) {
+			String movie_name = "";
+			movie_name = request.getParameter("movie_name");
+			
 			ReservedDAO dao = new ReservedDAO();
 			ArrayList<ReservedVO> reservedList = dao.getMovieReservedList(movie_name);
 			int movie_column = dao.getMovie_column(movie_name);

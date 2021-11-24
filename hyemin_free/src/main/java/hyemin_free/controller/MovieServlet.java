@@ -52,6 +52,16 @@ public class MovieServlet extends HttpServlet {
 		}else if(cmdReq.equals("addMovie")) { // addMovie 페이지로 이등
 			RequestDispatcher view = request.getRequestDispatcher("addMovie.jsp");
 			view.forward(request, response);
+		}else if(cmdReq.equals("edit")) {
+			String movie_name = request.getParameter("movie_name");
+			MovieVO vo = new MovieVO();
+			MovieDAO dao = new MovieDAO();
+			
+			vo = dao.getInfofromName(movie_name);
+			request.setAttribute("movie", vo);
+	
+			RequestDispatcher view = request.getRequestDispatcher("updateMovie.jsp");
+			view.forward(request, response);
 		}
 	}
 
