@@ -78,6 +78,7 @@
                     clicked.forEach((data) => {
                         selectedSeats.push(data.value);
                     }) 
+                    
 	            }
 				
 				<% } %>

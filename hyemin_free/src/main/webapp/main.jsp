@@ -30,6 +30,7 @@
 	        	<a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=addMovie"><h3>영화 추가</h3></a>
             <% }else{ %>
             	<a id="title3"><h3><%=session.getAttribute("id")%> 님</h3></a>
+            	<a id="title2" href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=<%=session.getAttribute("id") %>"><h3>마이페이지</h3></a>
             <% } %>
             
         </div>
