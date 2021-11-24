@@ -37,6 +37,22 @@ public class ReservedDAO {
 		return true;
 	}
 	
+	public boolean delete(ReservedVO reservedVO) {
+		connect();
+		String sql = "delete from reserved where movie_name='" + reservedVO.getMovie_name() + "' and row_column='" + reservedVO.getrow_column() + "'";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}finally {
+			disconnect();
+		}
+		return true;
+		
+	}
+	
 	public ArrayList<ReservedVO> getmyReservedList(String customer_id) {
 		connect();
 		ArrayList<ReservedVO> myReservedList = new ArrayList<ReservedVO>();

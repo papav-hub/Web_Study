@@ -175,13 +175,7 @@
         <br><br><br>
         <h3>Netflix KOREA</h3>
     </footer>
-    
-    
-    
-    
+ 
 </body>
-
-
-
 
 </html>

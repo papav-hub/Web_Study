@@ -78,6 +78,23 @@ public class ReservedServlet extends HttpServlet {
 			RequestDispatcher view = request.getRequestDispatcher("myPage.jsp");
 			view.forward(request, response);
 
+		}else if(cmdReq.equals("reservedDelete")) {
+			ReservedVO reservedVO = new ReservedVO();
+			reservedVO.setCustomer_id(request.getParameter("customer_id"));
+			reservedVO.setMovie_name(request.getParameter("movie_name"));
+			reservedVO.setrow_column(request.getParameter("row_column"));
+			
+			ReservedDAO reservedDAO = new ReservedDAO();
+			boolean delete = reservedDAO.delete(reservedVO);
+			request.setAttribute("addReserved_result", delete);// 여기까지 삭제
+			
+			// reserved list
+			ReservedDAO dao = new ReservedDAO();
+			ArrayList<ReservedVO> myReservedList = dao.getmyReservedList(request.getParameter("customer_id"));
+			request.setAttribute("myReservedList", myReservedList);
+			
+			RequestDispatcher view = request.getRequestDispatcher("myPage.jsp");
+			view.forward(request, response);
 		}
 	}
 

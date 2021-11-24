@@ -26,7 +26,7 @@
 			<td>&nbsp;&nbsp;</td>
 			<td>&nbsp;&nbsp;</td>
 			<td><h2 class="titulo1">좌석</h2></td>
-			<%-- <td><h2 class="titulo1"><%=addReserved_result %></h2></td> --%>
+			<td><h2 class="titulo1"><%=addReserved_result %></h2></td>
 		</tr>
 		
 		
@@ -38,9 +38,21 @@
 			<td>&nbsp;&nbsp;</td>
 			<td>&nbsp;&nbsp;</td>
 			<td><h2 class="titulo1"><%=vo.getrow_column() %></h2></td>
+			<td>&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;</td>
+			<td>
+				<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=reservedDelete&customer_id=<%=session.getAttribute("id") %>&movie_name=<%=vo.getMovie_name() %>&row_column=<%=vo.getrow_column() %>"><h2 class="titulo1">예약 내역 삭제</h2></a>
+        	</td>
 		</tr>
 		<% } %>
 
 	</table>
+
+	    
+	<footer class="pie2">
+        <br><br><br>
+        <h3>Netflix KOREA</h3>
+    </footer>
+    
 	</body>
 </html>
