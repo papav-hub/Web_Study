@@ -44,4 +44,11 @@
 	
 	
 	</body>
+	
+	    
+    
+	<footer class="pie2">
+        <br><br><br>
+        <h3>Netflix KOREA</h3>
+    </footer>
 </html>
