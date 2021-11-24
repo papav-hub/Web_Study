@@ -52,7 +52,7 @@
 	        <div class="sector-detalle">
 	            <h1 class="titulo-peli">WONDER</h1><br><br>
 	            <div class="sector-detalle-peli">
-	                <h3 id="h1"> 기타 </h3>
+	                <h3 id="h1"> 기타 &nbsp;</h3>
 	                <h3 id="h2"> 5+ </h3>
 	                <br>
 	                <br>
@@ -63,11 +63,13 @@
 	            	2018년 북미 극장가 가장 놀라운 화제작, 슈퍼히어로 이긴 기적 같은 흥행 주인공<br> 
 	                "넌 못생기지 않았어, 네게 관심있는 사람은 알게 될 거야" <br> 
 	                헬멧 속에 숨었던 아이 '어기', 세상 밖으로 나오다!<br> 
-	            </p><br><br>
-<!-- 	            <div class="protagonista-nombre">
-	                <h4 id="prota">출연</h4>
-	                <p id="nombres"> Julio Roberts, Owen Wilson, Jacob Tremblay</p>
-	            </div> -->
+	            </p>
+	            <br>
+	            <div class="sector-detalle-peli">
+	                <h3 id="h1">actor&nbsp;</h3>
+	                <p id="nombres"> &nbsp; Julio Roberts, Owen Wilson, Jacob Tremblay</p>
+	            </div>
+	            <br>
 	            
 	        </div>
 	    </section>
