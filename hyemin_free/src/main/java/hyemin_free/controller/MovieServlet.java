@@ -43,14 +43,15 @@ public class MovieServlet extends HttpServlet {
 		String cmdReq = "";
 		cmdReq = request.getParameter("cmdReq");
 		
-		if(cmdReq.equals("list")) {
+		if(cmdReq.equals("list")) { // main 로드를 위한 movieList 받아오기
 			MovieDAO dao = new MovieDAO();
 			ArrayList<MovieVO> movieList = dao.getMovieList();
 			request.setAttribute("movieList", movieList);
 			RequestDispatcher view = request.getRequestDispatcher("main.jsp");
 			view.forward(request, response);
-		}else if(cmdReq.equals("MovieList")){
-			
+		}else if(cmdReq.equals("addMovie")) { // addMovie 페이지로 이등
+			RequestDispatcher view = request.getRequestDispatcher("addMovie.jsp");
+			view.forward(request, response);
 		}
 	}
 

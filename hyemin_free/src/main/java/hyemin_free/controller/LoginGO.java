@@ -9,17 +9,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import hyemin_free.persistence.CustomerDAO;
+
 /**
- * Servlet implementation class CustomerServlet
+ * Servlet implementation class LoginGO
  */
-@WebServlet("/CustomerServlet")
-public class CustomerServlet extends HttpServlet {
+@WebServlet("/LoginGO")
+public class LoginGO extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CustomerServlet() {
+    public LoginGO() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,21 +31,22 @@ public class CustomerServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html charset=UTF-8");
 		
-		String cmdReq = "";
-		cmdReq = request.getParameter("cmdReq");
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
 		
-		if(cmdReq.equals("login")) {		
-			RequestDispatcher view = request.getRequestDispatcher("login.jsp");
-			view.forward(request, response);
-		}else if(cmdReq.equals("joinin")) {		
-			RequestDispatcher view = request.getRequestDispatcher("joinin.jsp");
-			view.forward(request, response);
-		}
+		CustomerDAO dao = new CustomerDAO();
+		boolean checkIdPassword = dao.checkIdPassword(id, password);
+		request.setAttribute("checkIdPassword", checkIdPassword);
+		request.setAttribute("id", id);
+		//request.setAttribute("password", password);
+		RequestDispatcher view = request.getRequestDispatcher("loginCheck.jsp");
+		view.forward(request, response);
+		
 	}
 
 	/**
