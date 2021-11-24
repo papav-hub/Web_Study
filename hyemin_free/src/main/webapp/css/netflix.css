@@ -30,10 +30,8 @@
     width: 250px;
     height: 30px;
     font-size: small;
-    margin-left: 10px;
     color: white;
     text-align: right;
-    margin-top: 20px;
     
 }
 
@@ -44,9 +42,8 @@
     font-size: small;
     background-color: rgb(253, 27, 27);
     color: white;
-    text-align: center;
+    text-align: right;
     border-radius: 3px;
-    margin-left: 15px;
     
 }
 
@@ -55,7 +52,7 @@
     width: 150px;
     height: 30px;
     font-size: small;
-    text-align: center;
+    text-align: right;
     color: white;
     border: 1px solid white;
     border-radius: 3px;
@@ -72,7 +69,7 @@
 /*Imagen y descripciones1*/
 
 .pelis-comentarios{
-    background-color: rgb(31, 27, 27);
+    background-color: black;
     margin-top: 0px;
     height: 400px;
 }

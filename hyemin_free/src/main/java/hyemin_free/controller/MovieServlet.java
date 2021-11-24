@@ -49,6 +49,8 @@ public class MovieServlet extends HttpServlet {
 			request.setAttribute("movieList", movieList);
 			RequestDispatcher view = request.getRequestDispatcher("main.jsp");
 			view.forward(request, response);
+		}else if(cmdReq.equals("MovieList")){
+			
 		}
 	}
 

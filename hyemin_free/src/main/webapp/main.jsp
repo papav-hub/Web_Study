@@ -28,6 +28,7 @@
 	        <% }else if(session.getAttribute("id").equals("admin")){ %>
 	        	<a id="title3" href=""><h3>관리자 계정</h3></a>
 	        	<a id="title2" href="http://localhost:8080/hyemin_free/addMovie.jsp"><h3>영화 추가</h3></a>
+	        	<a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=MovieList"><h3>영화 목록</h3></a>
             <% }else{ %>
             	<a id="title3"><h3><%=session.getAttribute("id")%> 님</h3></a>
             <% } %>
