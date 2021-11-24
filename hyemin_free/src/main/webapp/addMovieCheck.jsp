@@ -21,13 +21,13 @@
 	%>
 	
 	
-	<body>
+	<body style="background-color: black;">
 	
 		<%
 			if(MovieAddCheck){
-				out.println("<p>영화 추가 성공!!</p>");
+				out.println("<p>영화 추가 성공!! 잠시후 페이지가 이동합니다.</p>");
 			}else{
-				out.println("<p>영화 추가 실패 0o0</p>");
+				out.println("<p>영화 추가 실패 0o0 잠시후 페이지가 이동합니다.</p>");
 			}
 		
 		%>

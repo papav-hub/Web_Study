@@ -32,13 +32,13 @@
 		<ul>
 		<%
 			if(session.getAttribute("id").equals("null")){
-				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">!!!!!회원가입 실패!!!!!</p>");
+				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">!!!!!회원가입 실패!!!!! 잠시후 페이지가 이동합니다.</p>");
 
 			}else if(session.getAttribute("id").equals("admin")){
-				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">[관리자계정]입니다.</p>");
+				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">[관리자계정]입니다. 잠시후 페이지가 이동합니다.</p>");
 			
 			}else{
-				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">회원가입 성공!!</p>");
+				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">회원가입 성공!! 잠시후 페이지가 이동합니다.</p>");
 			}
 		
 		%>
