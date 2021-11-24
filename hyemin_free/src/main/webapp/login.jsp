@@ -15,11 +15,13 @@
     </header>
 	
 	<body style="background-color: black;">
-		<div align=center>
-			<form action="LoginGO" method="get" style="font-size:20pt; color:white; font-weight:bold;">
-				ID <input type="text" name="id" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"><br>
-				PASSWORD <input type="password" name="password" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"><br>
+		<div>
+			<form action="LoginGO" method="get" style="font-size:15pt; color:white; font-weight:bold;">
+			<ul>
+				ID&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="id" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;" autofocus><br><br>
+				PASSWORD&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"><br><br>
 				<input type="submit" value="LOGIN">
+			</ul>
 			</form>
 		</div>
 	
