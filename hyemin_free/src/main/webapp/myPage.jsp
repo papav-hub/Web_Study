@@ -26,7 +26,7 @@
 			<td>&nbsp;&nbsp;</td>
 			<td>&nbsp;&nbsp;</td>
 			<td><h2 class="titulo1">좌석</h2></td>
-			<td><h2 class="titulo1"><%=addReserved_result %></h2></td>
+			<%-- <td><h2 class="titulo1"><%=addReserved_result %></h2></td> --%>
 		</tr>
 		
 		

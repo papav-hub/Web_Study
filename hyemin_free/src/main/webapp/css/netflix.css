@@ -4,7 +4,7 @@
     margin: 0;
 }
 .cuerpo{
-    background-color: rgb(31, 27, 27);
+    background-color: rgb(0, 0, 0);
 }
 
 .iconos{
@@ -129,7 +129,7 @@ div > .panel-inicio #title2{
 /*Imagen y descripciones2*/
 
 .pelis-comentarios2{
-    background-color: rgb(31, 27, 27);
+    background-color: rgb(0, 0, 0);
     margin-top: 0px;
     height: 400px;
 }
@@ -177,7 +177,7 @@ div > .panel-inicio #title2{
 /*Imagen y descripciones3*/
 
 .pelis-comentarios3{
-    background-color: rgb(31, 27, 27);
+    background-color: rgb(0, 0, 0);
     margin-top: 0px;
     height: 400px;
 }
@@ -225,7 +225,7 @@ div > .panel-inicio #title2{
 /*Imagen y descripciones4*/
 
 .pelis-comentarios4{
-    background-color: rgb(31, 27, 27);
+    background-color: rgb(0, 0, 0);
     margin-top: 0px;
     height: 400px;
 }
@@ -273,7 +273,7 @@ div > .panel-inicio #title2{
 /*Imagen y descripciones5*/
 
 .pelis-comentarios5{
-    background-color: rgb(31, 27, 27);
+    background-color: rgb(0, 0, 0);
     margin-top: 0px;
     height: 400px;
 }
