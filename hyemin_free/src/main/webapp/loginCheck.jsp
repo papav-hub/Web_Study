@@ -28,20 +28,20 @@
 	%>
 	
 	
-	<body>
-	
+	<body style="background-color: black;">
+		<ul>
 		<%
 			if(session.getAttribute("id").equals("null")){
-				out.println("<p>!!!!!로그인 실패!!!!!</p>");
+				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">!!!!!로그인 실패!!!!!</p>");
 
 			}else if(session.getAttribute("id").equals("admin")){
-				out.println("<p>[관리자계정]</p>");
+				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">[관리자계정]입니다.</p>");
 			
 			}else{
-				out.println("<p>로그인 성공!!</p>");
+				out.println("<p style=\"font-size:15pt; color:white; font-weight:bold;\">로그인 성공!!</p>");
 			}
 		
 		%>
-		
+		</ul>
 	</body>
 </html>
