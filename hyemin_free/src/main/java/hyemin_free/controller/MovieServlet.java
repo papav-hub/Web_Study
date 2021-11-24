@@ -52,7 +52,7 @@ public class MovieServlet extends HttpServlet {
 		}else if(cmdReq.equals("addMovie")) { // addMovie 페이지로 이등
 			RequestDispatcher view = request.getRequestDispatcher("addMovie.jsp");
 			view.forward(request, response);
-		}else if(cmdReq.equals("edit")) {
+		}else if(cmdReq.equals("edit")) { // 수정하기로 이동, 정보 받아오기
 			String movie_name = request.getParameter("movie_name");
 			MovieVO vo = new MovieVO();
 			MovieDAO dao = new MovieDAO();
@@ -110,6 +110,40 @@ public class MovieServlet extends HttpServlet {
 			
 			RequestDispatcher view = request.getRequestDispatcher("addMovieCheck.jsp");
 			view.forward(request, response);
+			
+		}else if(cmdReq.equals("editMovie")) {
+			
+			MovieVO movieVO = new MovieVO();
+			
+			movieVO.setMovie_name(request.getParameter("movie_name"));
+			movieVO.setMovie_info(request.getParameter("movie_info"));
+			movieVO.setMovie_age(Integer.parseInt(request.getParameter("movie_age")));
+			movieVO.setMovie_genre(request.getParameter("movie_genre"));
+			movieVO.setMovie_image(request.getParameter("movie_image"));
+			movieVO.setMovie_row(Integer.parseInt(request.getParameter("movie_row")));
+			movieVO.setMovie_column(Integer.parseInt(request.getParameter("movie_column")));
+			
+			MovieDAO movieDAO = new MovieDAO();
+			
+			if(movieDAO.update(movieVO)) { // update 후, 결과 이동
+				
+				String movie_name = request.getParameter("movie_name"); // 수정내용 확인
+				MovieVO vo = new MovieVO();
+				MovieDAO dao = new MovieDAO();
+				
+				vo = dao.getInfofromName(movie_name);
+				request.setAttribute("movie", vo);
+		
+				RequestDispatcher view = request.getRequestDispatcher("updateMovieCheck.jsp");
+				view.forward(request, response);
+			
+			}else { // update 실패
+				
+				RequestDispatcher view = request.getRequestDispatcher("updateMovie.jsp");
+				view.forward(request, response);
+				
+			}
+		
 			
 		}
 	

@@ -99,6 +99,27 @@ public class MovieDAO {
 		return true;
 	}
 	
+	public boolean update(MovieVO movieVO) {
+		connect();
+		String sql = "update movie set movie_info=?, movie_age=?, movie_genre=?, movie_image=?, movie_row=?, movie_column=? where movie_name=" + "\"" + movieVO.getMovie_name() + "\"";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, movieVO.getMovie_info());
+			pstmt.setInt(2, movieVO.getMovie_age());
+			pstmt.setString(3, movieVO.getMovie_genre());
+			pstmt.setString(4, movieVO.getMovie_image());
+			pstmt.setInt(5, movieVO.getMovie_row());
+			pstmt.setInt(6, movieVO.getMovie_column());
+			pstmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}finally {
+			disconnect();
+		}
+		return true;
+	}
+	
 	
 	
 	

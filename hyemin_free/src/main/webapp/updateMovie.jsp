@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>ADD MOVIE</title>
+		<title>UPDATE MOVIE</title>
 	</head>
 	
 	<%
@@ -14,12 +14,12 @@
 	<body>
 	
 		<div>
-		<form action="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=updateMovie" method="post">
+		<form action="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=editMovie" method="post">
 			<fieldset>
 				<legend>MOVIE INFORMATION</legend>
 				
 				<ul>
-					<li>movie_name : <input type="text" name="movie_name" autofocus value=<%=vo.getMovie_name() %>></li>
+					<li>movie_name : <input type="text" name="movie_name" autofocus value=<%=vo.getMovie_name() %> readonly></li>
 					<li>movie_info : <input type="text" name="movie_info"value=<%=vo.getMovie_info() %>></li>
 					<li>movie_age : <input type="text" name="movie_age"value=<%=vo.getMovie_age() %>></li>
 					<li>movie_genre  <select name="movie_genre">
