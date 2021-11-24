@@ -24,7 +24,10 @@
            
             <% if(session.getAttribute("id").equals("null")){ %>
 	            <a id="title2" href="http://localhost:8080/hyemin_free/login.jsp"><h3>로그인</h3></a>
-	            <a id="title3" href="http://localhost:8080/hyemin_free/joinin.jsp"><h3>회원가입</h3></a>4
+	            <a id="title3" href="http://localhost:8080/hyemin_free/joinin.jsp"><h3>회원가입</h3></a>
+	        <% }else if(session.getAttribute("id").equals("admin")){ %>
+	        	<a id="title3" href=""><h3>관리자 계정</h3></a>
+	        	<a id="title2" href="http://localhost:8080/hyemin_free/addMovie.jsp"><h3>영화 추가</h3></a>
             <% }else{ %>
             	<a id="title3"><h3><%=session.getAttribute("id")%> 님</h3></a>
             <% } %>
@@ -48,15 +51,17 @@
 	        <div class="sector-detalle">
 	            <h1 class="titulo-peli">WONDER</h1><br><br>
 	            <div class="sector-detalle-peli">
-	                <h3 id="h1">genre</h3>
-	                <h3 id="h2">age</h3>
+	                <h3 id="h1"> 기타 </h3>
+	                <h3 id="h2"> 5+ </h3>
 	                <br>
 	                <br>
 	            </div>
 	            
 	            <br>
 	            <p class="parrafoPeli">
-	                WonDer 영화 설명입니다. <br>
+	            	2018년 북미 극장가 가장 놀라운 화제작, 슈퍼히어로 이긴 기적 같은 흥행 주인공<br> 
+	                "넌 못생기지 않았어, 네게 관심있는 사람은 알게 될 거야" <br> 
+	                헬멧 속에 숨었던 아이 '어기', 세상 밖으로 나오다!<br> 
 	            </p><br><br>
 <!-- 	            <div class="protagonista-nombre">
 	                <h4 id="prota">출연</h4>
@@ -142,7 +147,7 @@
        <!-- 4.ETC  -->
        <section class="pelis-comentarios">
         <div>
-            <h2 class="titulo1">스릴러 장르</h2>
+            <h2 class="titulo1">기타</h2>
         </div>
         <div class="imagen-descripcion1">
             <div style="overflow-y:hidden; white-space:nowrap;">
@@ -159,149 +164,7 @@
 						<% }}} %>
             </div>
         </div>
-       </section>		
-				
-
-				
-				
-				
-				
-				
-				
-    
-    
-<!--     <section>
-        <div class="mas-detalles">
-            <h1>Más detalles</h1>
-        </div>
-        <div class="contenedor-genero">
-            <div>
-                <h4 class="clase1">Protagonistas:</h4>
-                <p class="texto1">Disponible para descargar</p>
-            </div>
-            <div>
-                <h4 class="clase1">Protagonistas:</h4>
-                <p class="texto1">Peliculas familiares,<br> peliculas vasadas en la vida real,<br> Pelicuolas vasadas en libros,<br> 
-                    Peliculas infantiles y familiares, Dramas, <br> Melodramas</p>
-            </div>
-            <div>
-                <h4 class="clase1">Protagonistas:</h4>
-                <p class="texto1"> Inspirador,Emotivo,Optimistay</p>
-            </div>
-        </div>
-        <div class="contenedor-genero2">
-            <h4>Protagonistas:</h4>
-            <p> Inspirador,Emotivo,Optimistay</p>
-        </div>
-    </section> -->
-    
-    
-    
-    
-    
-    
-    
-    <!-- <section class="contenedor-de-grillas">
-        <h1>Más peliculas y series</h1>
-        <div class="grilla">
-            <div class="columnas-imagenes">
-                <img class="imagen-todas" src="media/img2/18-regalos.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/barrenderos-espaciales.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/break.jpg" alt="">
-            </div>
-            <div class="columnas-imagenes">
-                <img class="imagen-todas" src="media/img2/canvas.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/cielo-existe.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/dios-no-esta-muerto2.jpg" alt="">
-            </div>
-            <div class="columnas-imagenes">
-                <img class="imagen-todas" src="media/img2/dos-papas.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/everest.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/gran-hope.jpg" alt="">
-            </div>
-            <div class="columnas-imagenes">
-                <img class="imagen-todas" src="media/img2/la-vida-ante-si.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/moxie.jpg" alt="">
-                <img class="imagen-todas" src="media/img2/primier-hombre-luna.jpg" alt="">
-            </div>
-        </div>
-    </section> -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-<!--     <section class="section-contenedor-antes-pie">
-        <div>
-            <h1 class="titulo-antes-pie">Próximamente</h1>
-        </div>
-        <div class="contenedor-antes-pie">
-            <div class="antes-pie1">
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">Dos sinvergüenzas</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">Hit & Run</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">El discípulo</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-            </div>
-            <div class="antes-pie2">
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">Bangkok Breaking</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">Ídolo</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">Guía Headpace para el buen dormir</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-            </div>
-            <div class="antes-pie3">
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">Entrapped</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1">De Slag om de Schelde</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aperiam eveniet rerum minima et dolorum sunt dolore voluptatem facere 
-                    corporis qui?
-                </div>
-                <div class="antes-pie-parrafo">
-                    <h3 class="antes-pie-peli1"></h3>
-                    
-                </div>
-            </div>
-        </div>
-    </section> -->
-    
+       </section>		   
     
     
     

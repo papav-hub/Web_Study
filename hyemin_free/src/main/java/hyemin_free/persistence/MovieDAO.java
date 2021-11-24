@@ -49,6 +49,28 @@ public class MovieDAO {
 		return movieList;
 	}
 	
+	public boolean add(MovieVO vo) {
+		connect();
+		String sql = "insert into movie values (?,?,?,?,?,?,?)";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, vo.getMovie_name());
+			pstmt.setString(2, vo.getMovie_info());
+			pstmt.setInt(3, vo.getMovie_age());
+			pstmt.setString(4, vo.getMovie_genre());
+			pstmt.setString(5, vo.getMovie_image());
+			pstmt.setInt(6, vo.getMovie_row());
+			pstmt.setInt(7, vo.getMovie_column());
+			pstmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+			return false;
+		}finally {
+			disconnect();
+		}
+		return true;
+	}
+	
 	
 	
 	

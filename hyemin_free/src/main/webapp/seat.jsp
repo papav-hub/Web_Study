@@ -106,7 +106,9 @@
 		                        selectedSeats.push(data.value);
 		                    });
 		                }   
-		                openPopup();
+		                openPopup(); // 결제 페이지 띄우면서
+		                location.replace("http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"); // main으로 이동하기
+		                
 		                /* console.log(selectedSeats);
 		                window.alert(selectedSeats); // 확인용  */
 		            })	
@@ -123,19 +125,7 @@
 	    }
 
 	</script> 
-	<!--  document.write  -->
-	
-	
-	
-	
-	<!-- <button type="button" onClick="openPopup()">영수증 보기</button> -->
-	
-<!-- 	
-		<div class="panel-inicio">
-			<a id="title2" href="http://localhost:8080/hyemin_free/receipt.jsp"><h3>결제하기</h3></a>
-		</div> 
--->
-	
+
 	
 
 </html>
