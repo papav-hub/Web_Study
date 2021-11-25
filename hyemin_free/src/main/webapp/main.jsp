@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="hyemin_free.domain.*, java.util.List"%>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="myMovie" %>
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +31,7 @@
 	        	<a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=addMovie"><h3>영화 추가</h3></a>
             <% }else{ %>
             	<a id="title3">${id}님</a> <%-- <%=session.getAttribute("id")%> --%>
-            	<a id="title2" href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=<%=session.getAttribute("id") %>"><h3>마이페이지</h3></a>
+            	<a id="title2" href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=${id}"><h3>마이페이지</h3></a>
             <% } %>
             
         </div>
@@ -76,112 +77,9 @@
 	</div>
 
 
-		<!-- 1.ROMANCE  -->
-		<section class="pelis-comentarios">
-        <div>
-            <h2 class="titulo1">로맨스 장르</h2>
-        </div>
-        <div class="imagen-descripcion1">
-            <div style="overflow-y:hidden; white-space:nowrap;">
-            	<% 
-					List<MovieVO> movieList = (List<MovieVO>)request.getAttribute("movieList");
-						for(MovieVO vo : movieList){
-				%>
-					<%
-						if(vo.getMovie_genre().equals("romance")){
-							if(session.getAttribute("id").equals("null")){
-					%>
-	                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-	                <% }else if(session.getAttribute("id").equals("admin")){ %>
-		                	<a href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=edit&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-		                
-	                <%	}else{ %>
-	                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-					<% }}} %>
-            </div>
-        </div>
-       </section>
-      
-				
-			
-		<!-- 2.ACTION  -->	
-		<section class="pelis-comentarios">
-        <div>
-            <h2 class="titulo1">액션 장르</h2>
-        </div>
-        <div class="imagen-descripcion1">
-            <div style="overflow-y:hidden; white-space:nowrap;">
-            	<% 
-						for(MovieVO vo : movieList){
-				%>
-					<%
-						if(vo.getMovie_genre().equals("action")){
-							if(session.getAttribute("id").equals("null")){
-						%>
-		                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-		                <% }else if(session.getAttribute("id").equals("admin")){ %>
-		                	<a href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=edit&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-		                
-		                <%	}else{ %>
-		                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-						<% }}} %>
-            </div>
-        </div>
-       </section>
-       
-       
-       <!-- 3.THRILLER  -->
-       <section class="pelis-comentarios">
-        <div>
-            <h2 class="titulo1">스릴러 장르</h2>
-        </div>
-        <div class="imagen-descripcion1">
-            <div style="overflow-y:hidden; white-space:nowrap;">
-            	<% 
-						for(MovieVO vo : movieList){
-				%>
-					<%
-						if(vo.getMovie_genre().equals("thriller")){
-							if(session.getAttribute("id").equals("null")){
-						%>
-		                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-		                <% }else if(session.getAttribute("id").equals("admin")){ %>
-		                	<a href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=edit&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-		                
-		                <%	}else{ %>
-		                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-						<% }}} %>
-            </div>
-        </div>
-       </section>
-       
-       
-       <!-- 4.ETC  -->
-       <section class="pelis-comentarios">
-        <div>
-            <h2 class="titulo1">기타</h2>
-        </div>
-        <div class="imagen-descripcion1">
-            <div style="overflow-y:hidden; white-space:nowrap;">
-            	<% 
-						for(MovieVO vo : movieList){
-				%>
-					<%
-						if(vo.getMovie_genre().equals("etc")){
-							if(session.getAttribute("id").equals("null")){
-						%>
-		                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-		                <% }else if(session.getAttribute("id").equals("admin")){ %>
-		                	<a href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=edit&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-		                <%	}else{ %>
-		                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
-						<% }}} %>
-            </div>
-        </div>
-       </section>		   
-    
-    
-    
+	<myMovie:movieTag></myMovie:movieTag>
+
+
 	<footer class="pie2">
         <br><br><br>
         <h3>Netflix KOREA</h3>

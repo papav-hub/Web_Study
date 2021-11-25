@@ -18,7 +18,7 @@
 	<%
 		String selectedSeats = request.getParameter("selectedSeats");
 		String movie_name = request.getParameter("movie_name");
-		String id = (String)session.getAttribute("id");
+		/* String id = (String)session.getAttribute("id"); */
 	%>
 
 	
@@ -34,7 +34,7 @@
 		
 			<tr>
 				<td><h2 class="titulo1">결제할 ID</h2></td>
-				<td><h2 class="titulo1"><%=id %></h2></td>
+				<td><h2 class="titulo1">${id}</h2></td>
 			</tr>
 			
 			<tr>
@@ -55,7 +55,7 @@
 				<td></td>
 				<td>
 					<div class="panel-inicio">
-						<a id="title2" href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=<%=id %>&movie_name=<%=movie_name %>&row_column=<%=selectedSeats %>"><h3>결제하기</h3></a>
+						<a id="title2" href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=${id}&movie_name=<%=movie_name %>&row_column=<%=selectedSeats %>"><h3>결제하기</h3></a>
 					</div>
 				</td>
 				<td></td>
