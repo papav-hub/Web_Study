@@ -23,7 +23,7 @@
         </div>
         <div class="panel-inicio">
            
-            <% if(session.getAttribute("id").equals("null")){ %>
+            <% if(session.getAttribute("id").equals("null")){ %>  <!-- session.getAttribute("id") -->
 	            <a id="title2" href="http://localhost:8080/hyemin_free/CustomerServlet?cmdReq=login"><h3>로그인</h3></a>
 	            <a id="title3" href="http://localhost:8080/hyemin_free/CustomerServlet?cmdReq=joinin"><h3>회원가입</h3></a>
 	        <% }else if(session.getAttribute("id").equals("admin")){ %>

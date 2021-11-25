@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,12 +21,11 @@
 		boolean checkIdPassword = (boolean)request.getAttribute("checkIdPassword");
 		String id = (String)request.getAttribute("id");
 		
-		if(checkIdPassword){
-			session.setAttribute("id", id);
-		}else{
-			session.setAttribute("id", "null");
-		}
-	%>
+		if(checkIdPassword){ %>
+			<c:set value="${id}" var="id" scope="session"/>
+	<%	}else{ %>
+			<c:set value="null" var="id" scope="session"/>
+	<%	}%>
 	
 	
 	<body style="background-color: black;">
