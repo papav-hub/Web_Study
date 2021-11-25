@@ -54,7 +54,7 @@ div > .panel-inicio #title2{
     font-size: small;
     background-color: rgb(253, 27, 27);
     color: white;
-    text-align: right;
+    text-align: center;
     border-radius: 3px;
     
 }
@@ -64,7 +64,7 @@ div > .panel-inicio #title2{
     width: 150px;
     height: 30px;
     font-size: small;
-    text-align: right;
+    text-align: center;
     color: white;
     border: 1px solid white;
     border-radius: 3px;
