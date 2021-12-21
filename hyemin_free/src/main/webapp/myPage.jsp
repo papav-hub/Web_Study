@@ -15,7 +15,7 @@
 	
 	<header class="iconos">
         <div class="imagen-iconos">
-            <a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
+            <a id="title2" href="http://localhost:8000/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
         </div>
     </header>
 	
@@ -41,7 +41,7 @@
 			<td>&nbsp;&nbsp;</td>
 			<td>&nbsp;&nbsp;</td>
 			<td>
-				<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=reservedDelete&customer_id=<%=session.getAttribute("id") %>&movie_name=<%=vo.getMovie_name() %>&row_column=<%=vo.getrow_column() %>"><h2 class="titulo1">예약 내역 삭제</h2></a>
+				<a href="http://localhost:8000/hyemin_free/ReservedServlet?cmdReq=reservedDelete&customer_id=<%=session.getAttribute("id") %>&movie_name=<%=vo.getMovie_name() %>&row_column=<%=vo.getrow_column() %>"><h2 class="titulo1">예약 내역 삭제</h2></a>
         	</td>
 		</tr>
 		<% } %>

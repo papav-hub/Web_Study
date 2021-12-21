@@ -10,7 +10,7 @@
 	
 	<header class="iconos">
         <div class="imagen-iconos">
-            <a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
+            <a id="title2" href="http://localhost:8000/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
         </div>
     </header>
 	

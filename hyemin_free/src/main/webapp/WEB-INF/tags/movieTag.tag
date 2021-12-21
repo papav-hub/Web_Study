@@ -19,10 +19,10 @@
 					%>
 	                	<a><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
 	                <% }else if(session.getAttribute("id").equals("admin")){ %>
-		                	<a href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=edit&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+		                	<a href="http://localhost:8000/hyemin_free/MovieServlet?cmdReq=edit&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
 		                
 	                <%	}else{ %>
-	                   	<a href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
+	                   	<a href="http://localhost:8000/hyemin_free/ReservedServlet?cmdReq=list&movie_name=<%=vo.getMovie_name() %>"><img src="media/<%=vo.getMovie_image() %>" alt=""></a>
 					<% }}} %>
             </div>
         </div>

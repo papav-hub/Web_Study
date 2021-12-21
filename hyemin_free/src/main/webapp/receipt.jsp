@@ -10,7 +10,7 @@
 	
 	<header class="iconos">
         <div class="imagen-iconos">
-            <a id="title2" href="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
+            <a id="title2" href="http://localhost:8000/hyemin_free/MovieServlet?cmdReq=list"><img id="imagen" src="media/logo-netflix.png" alt=""></a>
         </div>
     </header>
 	
@@ -55,7 +55,7 @@
 				<td></td>
 				<td>
 					<div class="panel-inicio">
-						<a id="title2" href="http://localhost:8080/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=${id}&movie_name=<%=movie_name %>&row_column=<%=selectedSeats %>"><h3>결제하기</h3></a>
+						<a id="title2" href="http://localhost:8000/hyemin_free/ReservedServlet?cmdReq=payment&customer_id=${id}&movie_name=<%=movie_name %>&row_column=<%=selectedSeats %>"><h3>결제하기</h3></a>
 					</div>
 				</td>
 				<td></td>

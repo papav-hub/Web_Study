@@ -10,7 +10,7 @@
 	<body>
 	
 		<div>
-		<form action="http://localhost:8080/hyemin_free/MovieServlet?cmdReq=addMovie" method="post">
+		<form action="http://localhost:8000/hyemin_free/MovieServlet?cmdReq=addMovie" method="post">
 			<fieldset>
 				<legend>MOVIE INFORMATION</legend>
 				

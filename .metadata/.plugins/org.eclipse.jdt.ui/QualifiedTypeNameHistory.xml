@@ -11,11 +11,8 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="kpu.web.club.domain.StudentVO"/>
     <fullyQualifiedTypeName name="org.json.JSONArray"/>
-    <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.JspFragment"/>
-    <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.JspException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="hyemin_free.persistence.MovieDAO"/>
     <fullyQualifiedTypeName name="hyemin_free.domain.MovieVO"/>
@@ -26,4 +23,7 @@
     <fullyQualifiedTypeName name="hyemin_free.persistence.ReservedDAO"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
 </qualifiedTypeNameHistroy>

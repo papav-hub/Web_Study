@@ -11,7 +11,7 @@
 	
 	<c:set value="null" var="id" scope="session"/>
 	
-	<meta http-equiv="refresh" content="2; url=http://localhost:8080/hyemin_free/MovieServlet?cmdReq=list">
+	<meta http-equiv="refresh" content="2; url=http://localhost:8000/hyemin_free/MovieServlet?cmdReq=list">
 	
 	<div style="background-image: url('<%="media/logo-netflix.png"%>'); 
 				background-size: cover;
